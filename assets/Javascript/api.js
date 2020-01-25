@@ -12,9 +12,11 @@ $.ajax({
     for (let i = 0; i < response.results.length; i++) {
         var rawgResults = $("<div>").attr("id", "2019games");
         var rawgImages = $("<img>").attr("data-imgRAWG", "bGround");
+        var rawgRatings = $("<div>").attr("id", "rating");
         rawgResults.text(response.results[i].name);
+        rawgRatings.text("Rating: " + response.results[i].rating);
         rawgImages.attr("src", response.results[i].short_screenshots[0].image);
-        $("#test").prepend(rawgResults, rawgImages);
+        $("#test").prepend(rawgResults, rawgRatings, rawgImages);
     }
     
 
