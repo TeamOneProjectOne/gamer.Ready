@@ -1,0 +1,103 @@
+header {
+  
+    padding-left: 15px;
+    width 100%;
+    border-bottom: 1px solid black;
+    border: 1px solid black;
+    line-height: 1;
+  }
+  h{
+    vertical-align: text-bottom;
+    padding-top: 50px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    font-size: 50px;
+    text-align: center;
+    display: inline-block;
+    max-width: 100%;
+    width: 77%;
+    background-color: lightskyblue;
+    }
+  
+  
+  .login-menu {
+    float: right;
+    padding-top: 30px;
+    margin-right: 15px;
+  }
+  
+  main-nav {
+    float: left;
+    font-size: 20px;
+    padding: 10px;
+    width: 94.5%;
+    line-height: 1.5;
+    padding-left: 5%;
+    background-color: lightgray;
+    color: black;
+    border-bottom: 1px solid black;
+  }
+  
+  .spacing {
+    display: inline-block;
+    padding-left: 150px;
+  }
+  
+  second-nav {
+    margin-top: 1px;
+    font-size: 20px;
+    text-align: left;
+    float: left;
+    border-left: 1px solid black;
+      border-right: 1px solid black;
+      width: 12%;
+    padding-bottom: 550px;
+    background-color: lightsteelblue;
+  }
+  a {
+      color: blue;
+      text-decoration: none;
+  }
+  li a {
+      display: block;
+      color: blue;
+      text-decoration: none;
+  }
+  
+  li a:hover, a:hover {
+      background-color: gray;
+      color: white;
+  }
+  
+  ul {
+    list-style-type: none;
+    line-height: 2;
+  }
+  
+​
+  h4{
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.3;
+  }
+  p {
+    text-align: left;
+  }
+  
+  article {
+    float: left;
+    padding: 10px;
+    width: 86%;
+    text-align: center;
+   }
+  
+​
+  
+  imgdiv {
+    float: left;
+    padding-top: 10px;
+    padding-left: 13%;
+  }
+  
+​
+  
