@@ -8,7 +8,7 @@ header {
     background-color: rgb(48, 46, 46);
       }
  
- h{
+ h, .jumbotron {
     vertical-align: text-bottom;
     padding-top: 50px;
     padding-right: 15px;
@@ -19,7 +19,12 @@ header {
     max-width: 100%;
     width: 77%;
     background-color: lightskyblue;
-    }
+    background-color: rgb(48, 46, 46);
+    font-family: 'VT323', monospace;
+    color:yellow;
+  }
+  
+    
 
 .login-menu {
     float: right;
@@ -35,6 +40,7 @@ header {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: rgb(48, 46, 46);
     color:orangered;
+    font-family: 'Baumans', cursive;
   }
 
   
@@ -68,12 +74,12 @@ header {
     background-color: lightsteelblue;
   }
   a {
-      color: blue;
+      color:orangered;
       text-decoration: none;
   }
   li a {
       display: block;
-      color: blue;
+      color:orangered;
       text-decoration: none;
   }
   
@@ -129,6 +135,11 @@ header {
   
   body {
     font-family: 'Baumans', cursive;
+  }
+  button {
+    /* border-radius: 25px; */
+    box-shadow: black 2px 2px;
+    padding: 10px;
   }
 
   @media only screen and (max-width: 968px) {
