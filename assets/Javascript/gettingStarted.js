@@ -35,9 +35,8 @@ $("#getStartedButton").on("click", function (event) {
     inputNameDB: inputName,
     inputUsernameDB: inputUsername
   });
-
-
   
+  $(location).attr('href', "userHome.html");
 
 });
 
