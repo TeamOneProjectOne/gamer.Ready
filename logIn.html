@@ -18,7 +18,7 @@
     <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/Style/style.css">
-    
+
   <style>
     img {
       height: 200px;
@@ -47,7 +47,7 @@
   <main-nav>
     <button><a HREF="index.html">Home</a></button>
     <div class="spacing">
-      <button><a href="">Get Started</a></button>
+      <button><a href="gettingStarted.html">Get Started</a></button>
       </div>
     <div class="spacing">
       <button><a HREF="">Games</a></button></div>
@@ -73,12 +73,35 @@
           aria-label="Search Games">
         <button id="searchButton" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form>
-    </nav>
-  </div>
 
-  <div class="container" class="bodyCard" id="gettingStartedCard">
-    <p>Weclome to gamer.Ready!  This app provides a convinient means of storing your internet queiries about games.  If you're a fan constantly googling release dates or ratings, we can help save your carpal tunnel's life span for quick scopes and platforming.  If you're a developer, we can help you with market research to track trends, see what's in demand right now and store that data for honing the scope of your next project. </p><br><p>Thanks for checking us out.  If you like what you see, you can create an account to store your searches and data.</p>
-    
+    </nav>
+    <form>
+       <div class="container" class="bodyCard" id="logInCard">
+           <p>Log in:</p><hr>
+            <div class="form-group">
+                <div class="col-sm-3 my-1">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">@</div>
+                    </div>
+                  <label class="sr-only" for="inlineFormInputGroupUsername">Username</label>
+                    <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+                  </div>
+                </div>
+                <div class="col-auto my-1">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                    <label class="form-check-label" for="autoSizingCheck2">
+                      Remember me
+                    </label>
+                  </div>
+                </div>
+                <div class="col-auto my-1">
+                  <button type="submit" class="btn btn-primary" id="logInButton">Submit</button>
+                </div>
+              </div>
+            </form>
+       </div>
   </div>
 
   ​
