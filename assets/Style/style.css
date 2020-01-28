@@ -62,7 +62,7 @@ header {
     padding-left: 150px;
   }
   
-  second-nav {
+  /* second-nav {
     margin-top: 1px;
     font-size: 20px;
     text-align: left;
@@ -72,7 +72,7 @@ header {
       width: 12%;
     padding-bottom: 550px;
     background-color: lightsteelblue;
-  }
+  } */
   a {
       color:orangered;
       text-decoration: none;
@@ -118,7 +118,7 @@ header {
     padding-left: 13%;
   }
 
-  .thisDiv {
+  .thisDiv, #youtubeGame {
     border-style: ridge;
     border-radius: 6px;
     border-color: rgb(164, 236, 56);
@@ -138,7 +138,8 @@ header {
     font-family: 'Baumans', cursive;
   }
   button {
-    /* border-radius: 25px; */
+    border-style: solid;
+    border-radius: 50px;
     box-shadow: black 2px 2px;
     padding: 10px;
   }
@@ -167,5 +168,25 @@ header {
   
   
   @media only screen and (max-width: 300px){
-  
+ .jumbotron
+ {float: left;
+max-width: 100px;};
+
+  button {
+    float: left;
+    font-family: 'VT323', monospace;
+    max-width: 50px;
+    }
+
+  .thisDiv {
+    font-family: 'VT323', monospace;
+    font-size: auto;
+    max-width: 300px;
+    float: left;
+  }
+
+
+
+
   };
+  
