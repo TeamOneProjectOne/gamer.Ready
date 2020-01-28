@@ -31,9 +31,23 @@ $(document).ready(function () {
             var rawgResults = $('<div class="thisGame">').attr("id", "thisGames");
             var rawgImages = $("<img>").attr("data-imgThisGame", "bGround");
             rawgImages.attr("src", response.results[0].background_image)
-            var rawgRatings = $('<div id="thisGameRating"></div>')
-            rawgRatings.text(response.results[0].rating)
-            $("#thisGame").append(rawgImages, rawgRatings);
+            $("#imageColumn").append(rawgImages);
+            var rawgRatings = $('<div id="thisGameRating"></div>');
+            rawgRatings.text("Rating: " + response.results[0].rating);
+            // var rawgPlatforms = $('<div><ul id="platforms"></ul></div>');
+            // rawgPlatforms.text("Platforms: " )
+            // for (i = 0; i < response.results[0].platforms.length; i++) {
+
+            //     var platformItems = $('<li>' + response.results[0].platforms[i].platform.name + '</li>');
+            //     $("#platforms").append(platformItems);
+            //     console.log("platforms: ", platformItems)
+            // }
+            var releaseDate = $('<div id="releaseDate"></div>');
+            releaseDate.text("Release Date: " + response.resluts[0].released)
+
+            
+
+            $("#statColumn").append(rawgRatings, releaseDate);
 
 
         });
