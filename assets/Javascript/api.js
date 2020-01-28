@@ -50,9 +50,16 @@ $(document).ready(function () {
     // }
     
     function youTube() {
-        var queryURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q="
-    //https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=surfing&key=AIzaSyC3EShBj-IXE56i2Tck-VRlcw5O8kVukPo
-        var apiKey = "AIzaSyC3EShBj-IXE56i2Tck-VRlcw5O8kVukPo"
+        var name = $("#searchInput").val().trim();
+        var queryURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=" + name + "&key=AIzaSyC3EShBj-IXE56i2Tck-VRlcw5O8kVukPo";
+
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        }).then(function (response){
+            console.log(response);
+        })
+    
     }
     rawg();
     //Need to either decide if we want the YouTube API on the main RAWG page or a separate display results page
@@ -65,6 +72,7 @@ $(document).ready(function () {
         queryURL = "https://api.rawg.io/api/games?search=" + searchInputGame;
         console.log("because clicked: " + queryURL)
         rawg()
+        youTube();
         // twitch();
     });
 
