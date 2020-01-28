@@ -21,13 +21,12 @@ $("#logInButton").on("click", function (event) {
   event.preventDefault();
   console.log("clicked logInButton")
 
-//   inputUsername = $("#inlineFormInputGroupUsername").val().trim();
-//   console.log(userEmail)
-//   console.log(inputName)
-//   console.log(inputUsername)
+  inputUsername = $("#inlineFormInputGroupUsername").val().trim();
+
+  console.log(inputUsername)
 
   
-//   $(location).attr('href', "myGames.html");
+    // $(location).attr('href', "myGames.html");
 
 });
 
