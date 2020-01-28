@@ -10,15 +10,15 @@
   <title>Welcome to gamer.Ready</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <script src="assets/Javascript/firebase.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Baumans|VT323&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/Style/style.css">
-
-  <script src="assets/Javascript/firebase.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Baumans|VT323&display=swap" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
-
+    
   <style>
     img {
       height: 200px;
@@ -35,19 +35,19 @@
   <header>
     <h>Welcome to gamer.Ready</h>
     <div class="login-menu">
-      <h3> <button><a HREF="register.html">Register</a></button></h3>
+      <h3> <a HREF="register.html">Register</a></h3>
     </div>
     <div class="login-menu">
-      <h3><button><a HREF="logIn.html">Log In</a></button></h3>
+      <h3><a HREF="logIn.html">Log In</a></h3>
     </div>
     ​
     </login-menu>
   </header>
   ​
   <main-nav>
-    <button><a HREF="">Home</a></button>
+    <button><a HREF="index.html">Home</a></button>
     <div class="spacing">
-      <button><a href="gettingStarted.html">Get Started</a></button>
+      <button><a href="">Get Started</a></button>
       </div>
     <div class="spacing">
       <button><a HREF="">Games</a></button></div>
@@ -73,20 +73,18 @@
           aria-label="Search Games">
         <button id="searchButton" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form>
-
     </nav>
-    <div class="row">
-      <div class="col-md">
-        <div id="test">
+  </div>
 
-        </div>
-      </div>
-    </div>
+  <div class="container" class="bodyCard" id="gettingStartedCard">
+    <p>Weclome to gamer.Ready!  This app provides a convinient means of storing your internet queiries about games.  If you're a fan constantly googling release dates or ratings, we can help save your carpal tunnel's life span for quick scopes and platforming.  If you're a developer, we can help you with market research to track trends, see what's in demand right now and store that data for honing the scope of your next project. </p><br><p>Thanks for checking us out.  If you like what you see, you can create an account to store your searches and data.</p>
+    
   </div>
 
   ​
-  <script src="assets/Javascript/api.js"></script>
-</body>
+  <script src="assets/Javascript/firebase.js"></script>
+  <script src="assets/Javascript/gettingStarted.js"></script>
+</body> 
 ​
 
 </html>

@@ -1,20 +1,14 @@
-// <!-- The core Firebase JS SDK is always required and must be listed first -->
-// <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
-
-// <!-- TODO: Add SDKs for Firebase products that you want to use
-//      https://firebase.google.com/docs/web/setup#available-libraries -->
-
-// <script>
-//   // Your web app's Firebase configuration
-//   var firebaseConfig = {
-//     apiKey: "AIzaSyCEfOgbVCpO44GKCN4s37XyNjd-vtE7hls",
-//     authDomain: "gamerready-f92d0.firebaseapp.com",
-//     databaseURL: "https://gamerready-f92d0.firebaseio.com",
-//     projectId: "gamerready-f92d0",
-//     storageBucket: "gamerready-f92d0.appspot.com",
-//     messagingSenderId: "704847578047",
-//     appId: "1:704847578047:web:1aa702fa2be7c45e56d70a"
+// var firebaseConfig = {
+//     apiKey: "AIzaSyATyfvW4ljW1OPganzWkNMXK7F_nMgzQPQ",
+//     authDomain: "fir-demo-33d93.firebaseapp.com",
+//     databaseURL: "https://fir-demo-33d93.firebaseio.com",
+//     projectId: "fir-demo-33d93",
+//     storageBucket: "fir-demo-33d93.appspot.com",
+//     messagingSenderId: "987132343245",
+//     appId: "1:987132343245:web:b050e90e84c0b398c38a84",
+//     measurementId: "G-MP2NW7NGV7"
 //   };
 //   // Initialize Firebase
 //   firebase.initializeApp(firebaseConfig);
-// </script>
+//   firebase.analytics();
+  
