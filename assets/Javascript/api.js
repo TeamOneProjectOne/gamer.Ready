@@ -4,6 +4,10 @@ $(document).ready(function () {
     var queryURL = "https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-added"
     var gameTitle = "";
     var rawgTitle = "";
+    var EweTewb = "";
+    var EweTewbLink = "";
+    var videoName = "";
+
     function rawg() {
 
         var gamesData = [];
@@ -55,6 +59,7 @@ $(document).ready(function () {
                 // console.log("THIS THING HERE IS:", videoName);
                 // console.log("PICTURE THIS:", videoImage)
                 $("#videotest").append(videoDiv)
+               
     
     
             }
@@ -93,7 +98,6 @@ $(document).ready(function () {
     $(document).on("click", ".thisDiv", function (event) {
         event.preventDefault();
         console.log("clicky-div")
-        // gameTitle = $(this).prop("#rawgTitle");
         gameTitle = $(this).find("#rawgTitle").text()
         console.log("yeap", $(this).find("#rawgTitle").text())
         console.log("say what now? " + queryURL)
@@ -103,13 +107,19 @@ $(document).ready(function () {
         localStorage.setItem("rawgGamePage", gameTitle);
         $(location).attr('href', "gamePage.html")
 
-        // var thisGame = $(this).attr("<a "
-        // var thisGameName = $(this)
     });
+    //take me to EweTewb
+    $(document).on("click", "#videoVideo", function(event) {
+        event.preventDefault();
+        console.log("clicky-vids")
+        // eweTewbDivLink = $(this).find("#videoName").text()
+        eweTewbDivLink = $(this).find("a").attr("href")
+        console.log("ewe vids: ", $(this).find("a").attr("href"))
+        console.log("ewe var: ",  eweTewbDivLink)
+        $(location).attr('href', eweTewbDivLink)
 
-    // $("#videos").on("click", function (event) {
-    //     // event.preventDefault();
+    })
+   
 
-    // })
 
 });
