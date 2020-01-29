@@ -17,7 +17,7 @@ $(document).ready(function () {
     //results[i].platforms[i].platform.name
     queryURL = "https://api.rawg.io/api/games?search=" + key;
     console.log("not this sh*t again... ", queryURL)
-    let gameID = $()
+    
     // function rawg() {
 
     //     // var gamesData = [];
@@ -38,50 +38,38 @@ $(document).ready(function () {
             var releaseDate = $('<div id="releaseDate"></div><br>');
             releaseDate.text("Release Date: " + released);
             console.log("released: ", releaseDate)
-            var platformItems = "";
             var rawgPlatforms = $('<div>Platforms: <ul id="platforms"></ul></div>');
             rawgPlatforms.append(platformItems)
+            $("#statColumn").append(rawgRatings, releaseDate, rawgPlatforms);
+
+            
             for (i = 0; i < response.results[0].platforms.length; i++) {
 
                 var platformItems = $('<li>' + response.results[0].platforms[i].platform.name + '</li>');
-                $("#platforms").append(platformItems[i]);
+                $("#platforms").append(platformItems);
                 console.log("platforms: ", platformItems[i])
             }
 
-            $("#statColumn").append(rawgRatings, releaseDate, rawgPlatforms);
+            var descId = response.results[0].id
+       
+    
+    
+    function description() {
+        var descURL = "https://api.rawg.io/api/games/" + descId;
+
+        $.ajax({
+            url:descURL,
+            method: "GET"
+        }).then(function (response){
+            let gameDesc = response.description
+            console.log(gameDesc);
+            $("#descColumn").append(gameDesc);
+        })
 
 
-        });
-    
-
-        function youTube() {
-            var name = key
-            var youtubeURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=" + name + "&key=AIzaSyC3EShBj-IXE56i2Tck-VRlcw5O8kVukPo";
-    
-            $.ajax({
-                url: youtubeURL,
-                method: "GET"
-            }).then(function (response) {
-                console.log(response);
-                let items = response.items;
-                for (let i = 0; i < items.length; i++) {
-                    let item = items[i];
-                    var videoResults = $("<div>").attr("id", "youtubeGame")
-                    var videoName = $("<h5>")
-                    videoName.text($(item.snippet.title));
-                    videoResults.prepend(videoName)
-                    var videoImage = $("<img>")
-                    videoImage.attr("src", $(item.snippet.thumbnails.medium.url));
-                    videoResults.prepend(videoImage);
-
-                    
-    
-                    $("#videotest").prepend(videoResults);
-                }
-                console.log(videoResults);
-            })
-    
-        }
-        youTube();
+    }
+    description();
+    })
 });
 
+        

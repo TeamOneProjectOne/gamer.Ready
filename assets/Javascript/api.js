@@ -18,10 +18,10 @@ $(document).ready(function () {
                 var rawgResults = $('<div class="thisDiv">').attr("id", "rawgGames");
                 var rawgImages = $("<img>").attr("data-imgRAWG", "bGround");
                 rawgResults.append(rawgImages)
-                var rawgRatings = $("<div>").attr("id", "rating");
-                rawgResults.append(rawgRatings)
                 var rawgTitle = $("<div>").attr("id", "rawgTitle")
                 rawgResults.append(rawgTitle)
+                var rawgRatings = $("<div>").attr("id", "rating");
+                rawgResults.append(rawgRatings)
                 rawgTitle.append(response.results[i].name);
                 rawgRatings.text("Rating: " + response.results[i].rating);
                 rawgImages.attr("src", response.results[i].short_screenshots[0].image);
@@ -32,47 +32,60 @@ $(document).ready(function () {
 
         })
     }
+    var youtubeURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=21&q=videogames&key=AIzaSyCPy54AlgJ3V_7vhdgJwHdRVkPHm06fHU0";
     
-    function youTube() {
-        // var name = $("#searchInput").val().trim();
-        var youtubeURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=bestgames&key=AIzaSyC3EShBj-IXE56i2Tck-VRlcw5O8kVukPo";
-
+    let videoGames = function youTube() {
+        
         $.ajax({
             url: youtubeURL,
             method: "GET"
         }).then(function (response) {
-            console.log(response);
+            console.log("EweTewb response: ", response);
             let items = response.items;
+            console.log("video searches:", items);
             for (let i = 0; i < items.length; i++) {
-                let item = items[i];
-                var videoResults = $("<div>").attr("id", "youtubeGame")
-                var videoName = $("<h5>")
-                videoName.text($(item.snippet.title));
-                videoResults.prepend(videoName)
-                var videoImage = $("<img>")
-                videoImage.attr("src", $(item.snippet.thumbnails.medium.url));
-                videoResults.prepend(videoImage);
-                
-
-                $("#videotest").prepend(videoResults);
+                let videoDiv = $('<div id="videoVideo">')
+                let EweTewb = items[i].id.videoId
+                let EweTewbLink = "https://www.youtube.com/video/" + EweTewb;
+                // console.log("items: ", items[i].snippet.title);
+                let videoImage = $("<img>").attr("src", items[i].snippet.thumbnails.medium.url)
+                videoDiv.append(videoImage, $("<br>"))
+                let videoName = $('<a href="' + EweTewbLink + '">' + items[i].snippet.title + '</a>')
+                videoDiv.append(videoName)
+                // console.log("THIS THING HERE IS:", videoName);
+                // console.log("PICTURE THIS:", videoImage)
+                $("#videotest").append(videoDiv)
+    
+    
             }
-            console.log(videoResults);
+    
         })
-
+    
     }
     rawg();
-    
+    videoGames();
     
 
     $("#searchButton").on("click", function () {
         event.preventDefault();
         var searchInputGame = $("#searchInput").val().trim();
         $("#test").empty();
+        $("#videotest").empty();
         queryURL = "https://api.rawg.io/api/games?search=" + searchInputGame;
         console.log("because clicked: " + queryURL)
         rawg()
         
     });
+
+    $("#videosButton").on("click", function(event){
+        event.preventDefault();
+        var searchInputGame = $("#searchInput").val().trim();
+        $("#test").empty();
+        $("#videotest").empty();
+        youtubeURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=21&q=" + searchInputGame + "&key=AIzaSyCPy54AlgJ3V_7vhdgJwHdRVkPHm06fHU0";
+        videoGames();
+        
+    })
 
 
 
