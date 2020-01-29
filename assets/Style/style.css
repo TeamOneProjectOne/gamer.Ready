@@ -13,12 +13,12 @@ header {
     padding-top: 50px;
     padding-right: 15px;
     padding-bottom: 5px;
-    font-size: 50px;
+    font-size: 80px;
     text-align: center;
     display: inline-block;
     max-width: 100%;
     width: 77%;
-    background-color: lightskyblue;
+    /* background-color: lightskyblue; */
     background-color: rgb(48, 46, 46);
     font-family: 'VT323', monospace;
     color:yellow;
@@ -52,9 +52,13 @@ header {
     width: 94.5%;
     line-height: 1.5;
     padding-left: 5%;
-    background-color: lightgray;
+    background-color: rgba(255, 60, 0, 0.76);
+    background-image: url(../images/NES.PNG);
+    background-size: contain;
     color: black;
     border-bottom: 1px solid black;
+    box-shadow: rgba(3, 3, 3, 0.952) 0px 9px;
+    
   }
   
   .spacing {
@@ -83,10 +87,10 @@ header {
       text-decoration: none;
   }
   
-  li a:hover, a:hover {
+  /* li a:hover, a:hover {
       background-color: gray;
       color: white;
-  }
+  } */
   
   ul {
     list-style-type: none;
@@ -120,14 +124,20 @@ header {
 
   .thisDiv, #youtubeGame {
     border-style: ridge;
-    border-radius: 6px;
+    border-radius: 15px;
     border-color: rgb(164, 236, 56);
     /* border-color: rgb(99, 6, 136); */ 
     border-width: 10px;
     background-color: black;
-    padding: 2px;
+    padding: 8px;
     margin: 3px;
+    box-shadow: rgba(3, 3, 3, 0.952) 9px 9px;
+    margin-bottom: 12px;
   }
+  .thisDiv:hover {
+    background-color: greenyellow;
+  }
+
 
   html, h1 {
     font-family: 'VT323', monospace;
@@ -142,11 +152,17 @@ header {
     border-radius: 50px;
     box-shadow: black 2px 2px;
     padding: 10px;
+    margin: 6px;
+  }
+  button:hover {
+    border-color: rgb(15, 15, 15);
+    box-shadow: whitesmoke 0px 0px 2px 2px;
+    background-color: rgb(15, 15, 15);
   }
 
  #gettingStartedCard, #logInCard {
     border-style: ridge;
-    border-radius: 6px;
+    border-radius: 15px;
     border-color: rgb(164, 236, 56);
     /* border-color: rgb(99, 6, 136); */ 
     border-width: 10px;
@@ -154,6 +170,45 @@ header {
     padding: 2px;
     margin: 3px;
   }
+
+  #gameTitleDisplay {
+    font-size: 4rem;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    text-shadow: 2px 2px 10px rgb(157, 21, 236);
+    /* text-shadow: 2px 2px rgb(164, 236, 56); */
+  }
+  #imageColumn, #statColumn, #descColumn, #gameTitleDisplay {
+    border-style: ridge;
+    border-radius: 15px;
+    border-color: rgb(164, 236, 56);
+    /* border-color: rgb(99, 6, 136); */ 
+    border-width: 10px;
+    background-color: black;
+    padding: 8px;
+    margin: 3px;
+    box-shadow: rgba(3, 3, 3, 0.952) 9px 9px;
+    margin-bottom: 12px;
+  }
+  #statColumn {
+    margin-right: 150px;
+  }
+  #videoVideo {
+    border-style: ridge;
+    border-radius: 15px;
+    border-width: 10px;
+    background-color: rgb(94, 90, 90);
+    border-color: red;
+    box-shadow: rgba(3, 3, 3, 0.952) 9px 9px;
+    margin-bottom: 12px;
+    padding: 10px;
+  }
+
+  #videoVideo:hover {
+    background-color: rgb(201, 53, 53);
+    
+  }
+
+
 
   @media only screen and (max-width: 968px) {
 

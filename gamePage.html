@@ -10,18 +10,18 @@
   <title>gamer.Ready</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/Style/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/Style/style.css">
 
   <script src="assets/Javascript/firebase.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Baumans|VT323&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Aclonica|Architects+Daughter|Marmelad|Montserrat+Subrayada|Press+Start+2P|Tomorrow&display=swap" rel="stylesheet">
 
   <style>
     img {
       height: 400px;
       width: 800px;
     }
-
   </style>
 </head>
 ​
@@ -30,7 +30,6 @@
   <div class="jumbotron"></div>
   <header>
     <h>gamer.Ready</h>
-    <h2 id="gameTitleDisplay"></h2>
     <div class="login-menu">
       <h3> <a HREF="register.html">Register</a></h3>
     </div>
@@ -42,40 +41,54 @@
   </header>
   ​
   <main-nav>
-    <a HREF="index.html">Home</a>
+    <button><a HREF="index.html">Home</a></button>
     <div class="spacing">
-      Get Started</div>
+      <button><a href="gettingStarted.html">Get Started</a></button>
+    </div>
     <div class="spacing">
-      <a HREF="">Games</a></div>
+      <button><a HREF="">Games</a></button></div>
     <div class="spacing">
-      <a HREF="">About Us</a></div>
+      <button><a HREF="">About Us</a></button></div>
     <div class="spacing">
-      <a HREF="">Contact</a></div>
+      <button><a HREF="">Contact</a></button></div>
+    <div class="spacing">
+      <button id="videos"><a HREF="test.html">Videos</a></button></div>
   </main-nav>
   ​
   <!-- <second-nav>
-    <ul>
-      Getting Started
-      <li><a href=#>Release Dates</a></li>
-      <li><a href=#>Games</a></li>
-
-    </ul>
-  </second-nav> -->
+          <ul>
+            Getting Started
+            <li><a href=#>Release Dates</a></li>
+            <li><a href=#>Games</a></li>
+            
+          </ul>
+        </second-nav> -->
 
   <div class="container">
     <nav class="navbar navbar-dark bg-dark">
       <form class="form-inline">
         <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search"
           aria-label="Search Games">
-        <button id="searchButton" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        <button id="searchButton" class="btn btn-outline-success my-2 my-sm-0" type="submit">Games</button>
+        <button id="videosButton" class="btn btn-outline-danger my-2 my-sm-0" type="submit">Videos</button>
       </form>
     </nav>
-
+    <h2 id="gameTitleDisplay" style="text-align: center;"></h2>
     <div class="row">
-      <div class="col-md">
+      <div class="col-md" id="imageColumn">
         <div id="thisGame">
 
         </div>
+      </div>
+    </div>
+    <div class="row justify-space-inbetween">
+
+
+      <div class="col-md-5" id="statColumn">
+
+      </div>
+      <div class="col-md-5" id="descColumn">
+
       </div>
     </div>
   </div>
