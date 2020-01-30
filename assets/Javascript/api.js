@@ -36,7 +36,7 @@ $(document).ready(function () {
 
         })
     }
-    var youtubeURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=21&q=videogames&key=AIzaSyCPy54AlgJ3V_7vhdgJwHdRVkPHm06fHU0";
+    var youtubeURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=21&q=bestvideogames&key=AIzaSyCPy54AlgJ3V_7vhdgJwHdRVkPHm06fHU0";
     
     let videoGames = function youTube() {
         

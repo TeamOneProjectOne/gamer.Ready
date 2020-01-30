@@ -3,9 +3,10 @@ header {
      padding-left: 15px;
     width: 100%;
     border-bottom: 1px solid black;
-    border: 1px solid black;
+    border: 3px solid rgb(4, 0, 255);
     line-height: 1;
     background-color: rgb(48, 46, 46);
+    box-shadow: 2px 2px 20px rgb(16, 4, 179);
       }
  
  h, .jumbotron {
@@ -22,6 +23,15 @@ header {
     background-color: rgb(48, 46, 46);
     font-family: 'VT323', monospace;
     color:yellow;
+    outline-color: black;
+    text-shadow:
+		-3px -3px 0 #000,
+		3px -3px 0 #000,
+		-3px 3px 0 #000,
+        3px 3px 0 #000;
+        
+        align-content: center;
+        text-shadow: 3px 3px 10px rgb(0, 110, 255);
   }
   
     
@@ -41,23 +51,36 @@ header {
     background-color: rgb(48, 46, 46);
     color:orangered;
     font-family: 'Baumans', cursive;
+    position: absolute;
+    margin: 20px;
+  }
+  body {
+    margin: 0px 200px;
   }
 
   
 
   main-nav {
+    position: relative;
+    /* height: 75px; */
     float: left;
     font-size: 20px;
     padding: 10px;
-    width: 94.5%;
+    width: auto;
     line-height: 1.5;
-    padding-left: 5%;
+    /* padding-left: 5%; */
     background-color: rgba(255, 60, 0, 0.76);
     background-image: url(../images/NES.PNG);
     background-size: contain;
-    color: black;
-    border-bottom: 1px solid black;
+    color: orangered;
+    /* border-bottom: 1px solid black; */
     box-shadow: rgba(3, 3, 3, 0.952) 0px 9px;
+    border-style: groove;
+    border-color: rgb(5, 192, 5);
+    border-radius: 5px;
+    border-width: 5px;
+    margin: 20px;
+    box-shadow: 2px 2px 20px rgb(0, 255, 64);
     
   }
   
@@ -120,6 +143,7 @@ header {
     float: left;
     padding-top: 10px;
     padding-left: 13%;
+    
   }
 
   .thisDiv, #youtubeGame {
@@ -133,7 +157,9 @@ header {
     margin: 3px;
     box-shadow: rgba(3, 3, 3, 0.952) 9px 9px;
     margin-bottom: 12px;
-  }
+    
+   }
+
   .thisDiv:hover {
     background-color: greenyellow;
   }
@@ -148,9 +174,10 @@ header {
     font-family: 'Baumans', cursive;
   }
   button {
+    color: orangered;
     border-style: solid;
     border-radius: 50px;
-    box-shadow: black 2px 2px;
+    box-shadow: black 4px 4px;
     padding: 10px;
     margin: 6px;
   }
@@ -167,8 +194,10 @@ header {
     /* border-color: rgb(99, 6, 136); */ 
     border-width: 10px;
     background-color: black;
-    padding: 2px;
-    margin: 3px;
+    padding: 10px;
+    box-shadow: rgba(3, 3, 3, 0.952) 9px 9px;
+    margin-bottom: 12px;
+    justify-content: center;
   }
 
   #gameTitleDisplay {
@@ -192,7 +221,7 @@ header {
   #statColumn {
     margin-right: 150px;
   }
-  #videoVideo {
+  #videoVideo, .form-group {
     border-style: ridge;
     border-radius: 15px;
     border-width: 10px;
@@ -207,17 +236,53 @@ header {
     background-color: rgb(201, 53, 53);
     
   }
-
-
-
-  @media only screen and (max-width: 968px) {
+  .navbar {
+    border-style: groove;
+    border-radius: 10px;
+    border-width: 8px;
+    box-shadow: rgba(3, 3, 3, 0.952) 9px 9px;
+    margin-bottom: 12px;
+    padding: 20px;
+  }
+  .main-section {
+    text-align: center;
+    padding: 10px 45px;
+  }
+  .welcome {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 2px 2px 10px rgb(236, 21, 21);
+  }
+  
+  /* @media only screen and (max-width: 968px) {
 
 
   };
-  
-  
+   */
+ 
   @media only screen and (max-width: 720px){
-  
+    button {
+         font-family: 'VT323', monospace;
+    min-width: 100px;
+      }
+    
+    
+    .nav
+    {float: left;}
+
+
+.form-group {
+  float: left;
+}
+
+    .thisDiv {        
+      float: left; 
+      font-size: auto;
+      max-width: 500px;
+      float: left;
+      margin: auto;
+    }
   
   };
   
@@ -236,9 +301,14 @@ max-width: 100px;};
   .thisDiv {
     font-family: 'VT323', monospace;
     font-size: auto;
-    max-width: 300px;
+    max-width: 150px;
     float: left;
+    margin: auto;
   }
+
+.main-section{
+  max-width: 150px;
+}
 
 
 

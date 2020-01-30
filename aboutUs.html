@@ -10,20 +10,19 @@
   <title>Welcome to gamer.Ready</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <script src="assets/Javascript/firebase.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Baumans|VT323&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/Style/style.css">
-
-  <script src="assets/Javascript/firebase.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Baumans|VT323&display=swap" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
-
+    
   <style>
     img {
       height: 200px;
-      width: 400px;
-      
+      width: 400px;         
     }
 
   </style>
@@ -59,7 +58,7 @@
         <button id="videos"><a HREF="videos.html">Videos</a></button></div>
   </main-nav>
   ​
-  <!-- <second-nav>
+<!-- <second-nav>
     <ul>
       Getting Started
       <li><a href=#>Release Dates</a></li>
@@ -70,34 +69,27 @@
 
   <div class="container">
     <nav class="navbar navbar-dark bg-dark">
-      <form class="form-inline">
-          <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search Games">
+        <div class="welcome"><p>About</p></div>
+        <!-- <form class="form-inline">
+          <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search"
+            aria-label="Search Games">
           <button id="searchButton" class="btn btn-outline-success my-2 my-sm-0" type="submit">Games</button>
-          <!-- <button id="videosButton" class="btn btn-outline-danger my-2 my-sm-0" type="submit">Videos</button> -->
-      </form>
+          <button id="videosButton" class="btn btn-outline-danger my-2 my-sm-0" type="submit">Videos</button>
+        </form> -->
     </nav>
-    <nav class="navbar navbar-dark bg-dark">
-      <div class="welcome"><p>See Games that you save here!</p></div>
-      <!-- <form class="form-inline">
-        <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search"
-          aria-label="Search Games">
-        <button id="searchButton" class="btn btn-outline-success my-2 my-sm-0" type="submit">Games</button>
-        <button id="videosButton" class="btn btn-outline-danger my-2 my-sm-0" type="submit">Videos</button>
-      </form> -->
-    </nav>
-    
-    <div class="row">
-      <div class="col-md">
-        <div id="test">
-          <p>This will be the user's home page with the list of their stored games</p>
-        </div>
-      </div>
-    </div>
   </div>
-
-  ​
-  <script src="assets/Javascript/userHome.js"></script>
-</body>
+  <div class="container" class="bodyCard" id="gettingStartedCard">
+  <p>We are to gamer.Ready!, one of the first groups in this class to run and test gameAPIs for our University of Denver Coding Bootcamp! We were formed January 18, 2020 and we are passionate about gaming! Each snippet has a bit about each one of your group members below:</p>
+  <p>Destiny Clarke!</p>
+  <p>Jeff Ashear!</p>
+  <p>Braxton Thomas!</p>
+  <p>Hi, my name is Justin Tucker, the writer and one of the front-end developers of this project. My favorite game of all time is Star Ocean: The Second Story! My gmail is justteach17@gmail.com Hope you enjoy our site!</p>
+  <br>
+  <h6><i>"The shift key is important!"</i>-company motto.</h6>
+  </div>
+ <script src="assets/Javascript/firebase.js"></script>
+  <script src="assets/Javascript/gettingStarted.js"></script>
+</body> 
 ​
 
 </html>
