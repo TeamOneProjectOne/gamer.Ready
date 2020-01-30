@@ -33,7 +33,7 @@
 <body>
   <div class="jumbotron"></div>
   <header>
-    <h>Welcome to gamer.Ready</h>
+    <h>Welcome to gamer.Ready Test Page</h>
     <div class="login-menu">
       <h3> <button><a HREF="register.html">Register</a></button></h3>
     </div>
@@ -49,13 +49,13 @@
       <button><a href="gettingStarted.html">Get Started</a></button>
       </div>
     <div class="spacing">
-      <button><a HREF="">Games</a></button></div>
+      <button><a HREF="myGames.html">Games</a></button></div>
     <div class="spacing">
-      <button><a HREF="">About Us</a></button></div>
+      <button><a HREF="aboutUs.html">About Us</a></button></div>
     <div class="spacing">
-      <button><a HREF="">Contact</a></button></div>
+      <button><a HREF="contact.html">Contact</a></button></div>
       <div class="spacing">
-        <button id="videos" HREF="test.html">Videos</button></div>
+        <button id="videos"><a HREF="test.html">Videos</a></button></div>
   </main-nav>
   ​
   <!-- <second-nav>
@@ -71,10 +71,73 @@
     <nav class="navbar navbar-dark bg-dark">
       <form class="form-inline">
           <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search Games">
-          <button id="searchButton" class="btn btn-outline-success my-2 my-sm-0" type="submit">Games</button>
+          <!-- <button id="searchButton" class="btn btn-outline-success my-2 my-sm-0" type="submit">Games</button> -->
           <button id="videosButton" class="btn btn-outline-danger my-2 my-sm-0" type="submit">Videos</button>
       </form>
     </nav>
+
+    <div class="guage">
+      <canvas data-type="radial-gauge"
+    data-width="300"
+    data-height="300"
+    data-units="Rating"
+    data-min-value="0"
+    data-start-angle="0"
+    data-ticks-angle="180"
+    data-value-box="false"
+    data-max-value="4"
+    data-major-ticks="0,0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0"
+    data-minor-ticks="2"
+    data-stroke-ticks="true"
+    data-highlights='[
+        {"from": 2.0, "to": 2.5, "color": "rgba(200, 50, 50, .75)"}
+    ]'
+    data-color-plate="#fff"
+    data-border-shadow-width="0"
+    data-borders="false"
+    data-needle-type="arrow"
+    data-needle-width="2"
+    data-needle-circle-size="7"
+    data-needle-circle-outer="true"
+    data-needle-circle-inner="false"
+    data-animation-duration="1500"
+    data-animation-rule="linear"
+    data-animation-target="plate"
+></canvas>
+    </div>
+
+
+    <div class="guage">
+      <canvas data-type="radial-gauge"
+    data-width="300"
+    data-height="300"
+    data-units="Km/h"
+    data-min-value="0"
+    data-start-angle="0"
+    data-ticks-angle="180"
+    data-value-box="false"
+    data-max-value="220"
+    data-major-ticks="0,20,40,60,80,100,120,140,160,180,200,220"
+    data-minor-ticks="2"
+    data-stroke-ticks="true"
+    data-highlights='[
+        {"from": 160, "to": 220, "color": "rgba(200, 50, 50, .75)"}
+    ]'
+    data-color-plate="#fff"
+    data-border-shadow-width="0"
+    data-borders="false"
+    data-needle-type="arrow"
+    data-needle-width="2"
+    data-needle-circle-size="7"
+    data-needle-circle-outer="true"
+    data-needle-circle-inner="false"
+    data-animation-duration="1500"
+    data-animation-rule="linear"
+    data-animation-target="plate"
+></canvas>
+
+
+    </div>
 
     <div class="row">
       <div class="col-md-6">
@@ -92,7 +155,8 @@
   </div>
 
   ​
-  <script src="assets/Javascript/api.js"></script>
+  <script src="assets/Javascript/apiTest.js"></script>
+  <script src="assets/guages/package.json"></script>
 </body>
 ​
 

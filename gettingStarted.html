@@ -22,7 +22,7 @@
   <style>
     img {
       height: 200px;
-      width: 400px;      
+      width: 400px;         
     }
 
   </style>
@@ -34,10 +34,10 @@
   <header>
     <h>Welcome to gamer.Ready</h>
     <div class="login-menu">
-      <h3> <a HREF="register.html">Register</a></h3>
+      <h3> <button><a HREF="register.html">Register</a></button></h3>
     </div>
     <div class="login-menu">
-      <h3><a HREF="logIn.html">Log In</a></h3>
+      <h3><button><a HREF="logIn.html">Log In</a></button></h3>
     </div>
     ​
     </login-menu>
@@ -46,14 +46,16 @@
   <main-nav>
     <button><a HREF="index.html">Home</a></button>
     <div class="spacing">
-      <button><a href="">Get Started</a></button>
+      <button><a href="gettingStarted.html">Get Started</a></button>
       </div>
     <div class="spacing">
-      <button><a HREF="">Games</a></button></div>
+      <button><a HREF="myGames.html">Games</a></button></div>
     <div class="spacing">
-      <button><a HREF="">About Us</a></button></div>
+      <button><a HREF="aboutUs.html">About Us</a></button></div>
     <div class="spacing">
-      <button><a HREF="">Contact</a></button></div>
+      <button><a HREF="contact.html">Contact</a></button></div>
+      <div class="spacing">
+        <button id="videos"><a HREF="videos.html">Videos</a></button></div>
   </main-nav>
   ​
 <!-- <second-nav>
@@ -67,15 +69,19 @@
 
   <div class="container">
     <nav class="navbar navbar-dark bg-dark">
-      <form class="form-inline">
+      <div class="welcome">
+      <p class="welcome">WELCOME GAMERS</p>
+    </div>
+      <!-- <form class="form-inline">
         <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search"
           aria-label="Search Games">
         <button id="searchButton" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+      </form> -->
     </nav>
   </div>
-  <div class="container" class="bodyCard" id="gettingStartedCard">
-  <p>Welcome to gamer.Ready!  This app provides a convenient means of storing your internet queries about games.  If you're a fan constantly googling release dates or ratings, we can help save your carpal tunnel's life span for quick scopes and platforming.  If you're a developer, we can help you with market research to track trends, see what's in demand right now, and store that data so you can hone the scope of your next project. </p><br><p>Thanks for checking us out.  If you like what you see, you can create an account to store your searches and data.</p>
+  <div class="container"  id="gettingStartedCard">
+  <p>Welcome to gamer.Ready!  This app provides a convenient means of storing your internet queries about games.  If you're a fan constantly googling release dates or ratings, we can help save your carpal tunnel's life span for quick scopes and platforming.  If you're a developer, we can help you with market research to track trends, see what's in demand right now, and store that data so you can hone the scope of your next project. </p>
+  <br><p>So let's get started! You can search for a game on any platform in our search bar on our homepage, found by clicking "Home", or check out our "About Us" and "Contact" page! You can even create an account to store your searches! Thanks for checking us out!</p>
   <h6><i>"The shift key is important!"</i>-company motto.</h6>
   </div>
  <script src="assets/Javascript/firebase.js"></script>

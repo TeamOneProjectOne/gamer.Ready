@@ -36,7 +36,7 @@ $(document).ready(function () {
 
         })
     }
-    var youtubeURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=21&q=bestvideogames&key=AIzaSyCPy54AlgJ3V_7vhdgJwHdRVkPHm06fHU0";
+    var youtubeURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=21&q=videogames&key=AIzaSyCPy54AlgJ3V_7vhdgJwHdRVkPHm06fHU0";
     
     let videoGames = function youTube() {
         
@@ -123,3 +123,95 @@ $(document).ready(function () {
 
 
 });
+        var gauge = new RadialGauge({
+            renderTo: 'canvas-id',
+            width: 300,
+            height: 300,
+            units: "Km/h",
+            minValue: 0,
+            startAngle: 0,
+            ticksAngle: 180,
+            valueBox: false,
+            maxValue: 220,
+            majorTicks: [
+                "0",
+                "0.5",
+                "1.0",
+                "1.5",
+                "2.0",
+                "2.5",
+                "3.0",
+                "3.5",
+                "4.0",
+                "4.5",
+                "5.0"
+            ],
+            minorTicks: 2,
+            strokeTicks: true,
+            highlights: [
+                {
+                    "from": 2.0,
+                    "to": 2.5,
+                    "color": "rgba(200, 50, 50, .75)"
+                }
+            ],
+            colorPlate: "#fff",
+            borderShadowWidth: 0,
+            borders: false,
+            needleType: "arrow",
+            needleWidth: 2,
+            needleCircleSize: 7,
+            needleCircleOuter: true,
+            needleCircleInner: false,
+            animationDuration: 1500,
+            animationRule: "linear",
+            animationTarget: "plate"
+        }).draw();
+
+
+
+var gauge = new RadialGauge({
+    renderTo: 'canvas-id',
+    width: 300,
+    height: 300,
+    units: "Km/h",
+    minValue: 0,
+    startAngle: 0,
+    ticksAngle: 180,
+    valueBox: false,
+    maxValue: 220,
+    majorTicks: [
+        "0",
+        "20",
+        "40",
+        "60",
+        "80",
+        "100",
+        "120",
+        "140",
+        "160",
+        "180",
+        "200",
+        "220"
+    ],
+    minorTicks: 2,
+    strokeTicks: true,
+    highlights: [
+        {
+            "from": 160,
+            "to": 220,
+            "color": "rgba(200, 50, 50, .75)"
+        }
+    ],
+    colorPlate: "#fff",
+    borderShadowWidth: 0,
+    borders: false,
+    needleType: "arrow",
+    needleWidth: 2,
+    needleCircleSize: 7,
+    needleCircleOuter: true,
+    needleCircleInner: false,
+    animationDuration: 1500,
+    animationRule: "linear",
+    animationTarget: "plate"
+}).draw();

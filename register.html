@@ -10,38 +10,36 @@
   <title>Welcome to gamer.Ready</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
-    <script src="assets/Javascript/firebase.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Baumans|VT323&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
-    <link rel="stylesheet" type="text/css" href="assets/Style/style.css">
+
+  <script src="assets/Javascript/firebase.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Baumans|VT323&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/Style/style.css">
 
   <style>
     img {
       height: 200px;
       width: 400px;
-      
-    }
 
+    }
   </style>
 </head>
 ​
 
 <body>
-  <div class="jumbotron"></div>
+  <!-- <div class="jumbotron"></div> -->
   <header>
     <h>Welcome to gamer.Ready</h>
     <div class="login-menu">
-      <h3> <a HREF="register.html">Register</a></h3>
+      <h3> <button><a HREF="register.html">Register</a></button></h3>
     </div>
     <div class="login-menu">
-      <h3><a HREF="logIn.html">Log In</a></h3>
+      <h3><button><a HREF="logIn.html">Log In</a></button></h3>
     </div>
     ​
-    </login-menu>
   </header>
   ​
   <main-nav>
@@ -50,68 +48,66 @@
       <button><a href="gettingStarted.html">Get Started</a></button>
       </div>
     <div class="spacing">
-      <button><a HREF="">Games</a></button></div>
+      <button><a HREF="myGames.html">Games</a></button></div>
     <div class="spacing">
-      <button><a HREF="">About Us</a></button></div>
+      <button><a HREF="aboutUs.html">About Us</a></button></div>
     <div class="spacing">
-      <button><a HREF="">Contact</a></button></div>
+      <button><a HREF="contact.html">Contact</a></button></div>
+      <div class="spacing">
+        <button id="videos"><a HREF="videos.html">Videos</a></button></div>
   </main-nav>
   ​
-  <second-nav>
-    <ul>
-      Getting Started
-      <li><a href=#>Release Dates</a></li>
-      <li><a href=#>Games</a></li>
-
-    </ul>
-  </second-nav>
+  
 
   <div class="container" id="registerBodyCard">
     <nav class="navbar navbar-dark bg-dark">
-      <form class="form-inline">
-          <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search Games">
-          <button id="searchButton" class="btn btn-outline-success my-2 my-sm-0" type="submit">Games</button>
-          <button id="videosButton" class="btn btn-outline-danger my-2 my-sm-0" type="submit">Videos</button>
-      </form>
+      <div class="welcome"><p>Register</p></div>
+      <!-- <form class="form-inline">
+        <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search"
+          aria-label="Search Games">
+        <button id="searchButton" class="btn btn-outline-success my-2 my-sm-0" type="submit">Games</button>
+        <button id="videosButton" class="btn btn-outline-danger my-2 my-sm-0" type="submit">Videos</button>
+      </form> -->
     </nav>
     <form>
-        <div class="form-group">
-          <label for="exampleInputEmail1">email</label>
-          <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" autofocus>
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-          <div class="form-row align-items-center">
-            <div class="col-sm-3 my-1">
-              <label class="sr-only" for="inlineFormInputName" >Name</label>
-              <input type="text" class="form-control" id="inlineFormInputName" placeholder="Jane Doe">
-            </div>
-            <div class="col-sm-3 my-1">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text">@</div>
-                </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">email</label>
+        <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" autofocus>
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        <div class="form-row align-items-center">
+          <div class="col-sm-3 my-1">
+            <label class="sr-only" for="inlineFormInputName">Name</label>
+            <input type="text" class="form-control" id="inlineFormInputName" placeholder="Jane Doe">
+          </div>
+          <div class="col-sm-3 my-1">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">@</div>
+              </div>
               <label class="sr-only" for="inlineFormInputGroupUsername">Username</label>
-                <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
-              </div>
-            </div>
-            <div class="col-auto my-1">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
-                <label class="form-check-label" for="autoSizingCheck2">
-                  Remember me
-                </label>
-              </div>
-            </div>
-            <div class="col-auto my-1">
-              <button type="submit" class="btn btn-primary" id="getStartedButton">Submit</button>
+              <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
             </div>
           </div>
-      </form>
-  </div>
+          <div class="col-auto my-1">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+              <label class="form-check-label" for="autoSizingCheck2">
+                Remember me
+              </label>
+            </div>
+          </div>
+          <div class="col-auto my-1">
+            <button type="submit" class="btn btn-primary" id="getStartedButton">Submit</button>
+          </div>
+        </div>
 
-  ​
-  <script src="assets/Javascript/firebase.js"></script>
-  <script src="assets/Javascript/gettingStarted.js"></script>
-</body> 
+      </div>
+    </form>
+
+    ​
+    <script src="assets/Javascript/firebase.js"></script>
+    <script src="assets/Javascript/gettingStarted.js"></script>
+</body>
 ​
 
 </html>
