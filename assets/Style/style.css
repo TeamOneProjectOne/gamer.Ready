@@ -2,23 +2,24 @@
 header {
      padding-left: 15px;
     width: 100%;
-    border-bottom: 1px solid black;
-    border: 3px solid rgb(4, 0, 255);
+    /* border-bottom: 1px solid black; */
+    /* border: 3px solid rgb(4, 0, 255); */
     line-height: 1;
-    background-color: rgb(48, 46, 46);
-    box-shadow: 2px 2px 20px rgb(16, 4, 179);
+    /* background-color: rgb(48, 46, 46); */
+    /* box-shadow: 2px 2px 20px rgb(16, 4, 179); */
+    
       }
  
- h, .jumbotron {
+  .jumbotron {
     vertical-align: text-bottom;
     padding-top: 50px;
     padding-right: 15px;
     padding-bottom: 5px;
     font-size: 80px;
     text-align: center;
-    display: inline-block;
+    /* display: inline-block; */
     max-width: 100%;
-    width: 77%;
+    /* width: 77%; */
     /* background-color: lightskyblue; */
     background-color: rgb(48, 46, 46);
     font-family: 'VT323', monospace;
@@ -31,8 +32,111 @@ header {
         3px 3px 0 #000;
         
         align-content: center;
-        text-shadow: 3px 3px 10px rgb(0, 110, 255);
-  }
+        box-shadow: 2px 2px 30px rgb(255, 0, 255);
+    animation: pulse 6s infinite;
+    margin: auto 0;
+    }  
+    h1 {
+      vertical-align: text-bottom;
+      /* padding-top: 50px; */
+      padding-right: 15px;
+      padding-bottom: 5px;
+      font-size: 80px;
+      text-align: center;
+      background-color: rgba(48, 46, 46, 0);
+      font-family: 'VT323', monospace;
+      color:yellow;
+      /* outline-color: black; */
+      /* text-shadow:
+      -3px -3px 0 #000,
+      3px -3px 0 #000,
+      -3px 3px 0 #000,
+          3px 3px 0 #000; */
+          
+          align-content: center;
+          animation: 6s infinite;
+          animation-name: change;
+      }  
+      @keyframes change {
+        
+        0% {
+            /* color: rgb(0, 0, 0); */
+            text-shadow:
+      -3px -3px 0 hotpink,
+      3px -3px 0 hotpink,
+      -3px 3px 0 hotpink,
+          3px 3px 0 hotpink;
+        }
+        15% {
+            /* color: rgb(151, 250, 156); */
+            text-shadow:
+            -3px -3px 0 red,
+            3px -3px 0 red,
+            -3px 3px 0 red,
+                3px 3px 0 red;        }
+        25% {
+            /* color: rgb(151, 161, 250); */
+            text-shadow:
+            -3px -3px 0 purple,
+            3px -3px 0 purple,
+            -3px 3px 0 purple,
+                3px 3px 0 purple;        }
+        50% {
+            /* color: rgb(253, 142, 142); */
+            text-shadow:
+            -3px -3px 0 blue,
+            3px -3px 0 blue,
+            -3px 3px 0 blue,
+                3px 3px 0 blue;        }
+        75% {
+            /* color: rgb(172, 144, 248); */
+            text-shadow:
+            -3px -3px 0 rgb(0, 255, 0),
+            3px -3px 0 rgb(0, 255, 0),
+            -3px 3px 0 rgb(17, 197, 17),
+                3px 3px 0 rgb(0, 255, 0);        }
+        100% {
+            /* color: black; */
+            text-shadow:
+            -3px -3px 0 hotpink,
+            3px -3px 0 hotpink,
+            -3px 3px 0 hotpink,
+                3px 3px 0 hotpink;        }
+    }
+   
+  
+  @keyframes pulse {
+    0% {
+        border-color: pink;
+        box-shadow: 2px 2px 40px rgb(255, 0, 234);
+        /* text-shadow: 2px 2px 30px rgb(0, 255, 0); */
+    }
+    15% {
+        border-color: rgb(151, 250, 156);
+        box-shadow: 2px 2px 40px rgb(0, 255, 13);
+        /* text-shadow: 2px 2px 30px rgb(255, 72, 0); */
+    }
+    25% {
+        border-color: rgb(151, 161, 250);
+        box-shadow: 2px 2px 60px blue;
+        /* text-shadow: 2px 2px 30px rgb(255, 0, 119); */
+    }
+    50% {
+        border-color: rgb(253, 142, 142);
+        box-shadow: 2px 2px 40px rgb(255, 0, 0);
+        /* text-shadow: 2px 2px 30px rgb(132, 0, 255); */
+    }
+    75% {
+        border-color: rgb(172, 144, 248);
+        box-shadow: 2px 2px 60px rgb(76, 0, 255);
+        /* text-shadow: 2px 2px 30px rgb(4, 0, 255); */
+    }
+    100% {
+        border-color: pink;
+        box-shadow: 2px 2px 40px rgb(255, 0, 242);
+        /* text-shadow: 2px 2px 30px rgb(9, 255, 0); */
+    }
+}
   
     
 
@@ -42,10 +146,10 @@ header {
     margin-right: 15px;
   }
 
-  h1 {
+  /* h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:yellow;
-  }
+    color:yellow; */
+  /* } */
   head, body, nav {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: rgb(48, 46, 46);
@@ -57,7 +161,11 @@ header {
   body {
     margin: 0px 200px;
   }
+h6{
+  margin: 0px;
+  text-align: center;
 
+}
   
 
   main-nav {
@@ -80,7 +188,10 @@ header {
     border-radius: 5px;
     border-width: 5px;
     margin: 20px;
-    box-shadow: 2px 2px 20px rgb(0, 255, 64);
+    /* box-shadow: 2px 2px 20px rgb(0, 255, 64); */
+    box-shadow: 2px 2px 30px rgb(255, 0, 255);
+    animation: pulse 8s infinite;
+    
     
   }
   
@@ -283,6 +394,10 @@ header {
       float: left;
       margin: auto;
     }
+
+    img {
+      max-width: 400px;
+          }
   
   };
   
@@ -305,6 +420,9 @@ max-width: 100px;};
     float: left;
     margin: auto;
   }
+img {
+  max-width: 120px;
+}
 
 .main-section{
   max-width: 150px;
