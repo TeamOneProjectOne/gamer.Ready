@@ -79,6 +79,8 @@ $(document).ready(function () {
         queryURL = "https://api.rawg.io/api/games?search=" + searchInputGame;
         console.log("because clicked: " + queryURL)
         rawg()
+        $("#searchAll").append(rawgResults);
+
         
     });
 
@@ -89,6 +91,7 @@ $(document).ready(function () {
         $("#videotest").empty();
         youtubeURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=21&q=" + searchInputGame + "&key=AIzaSyCPy54AlgJ3V_7vhdgJwHdRVkPHm06fHU0";
         videoGames();
+        $("#searchAll").append(videoDiv);
         
     })
 
