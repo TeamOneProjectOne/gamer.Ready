@@ -12,33 +12,45 @@ var firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
+errorCode = "";
+errorMessage = "";
 
 var database = firebase.database();
 
-var userEmail = "";
+var email = "";
+var password = "";
 var inputName = "";
 var inputUsername = "";
 
 $(document).on("click", "#getStartedButton", function(event) {
-  event.preventDefault();
+  
   console.log("clicked submit")
-
-  localStorage.setItem("userEmail", userEmail)
-
+  
   userEmail = $("#inputEmail1").val().trim();
+  userPassword = $("#inputPassword6").val().trim();
   inputName = $("#inlineFormInputName").val().trim();
   inputUsername = $("#inlineFormInputGroupUsername").val().trim();
-  console.log(userEmail)
-  console.log(inputName)
-  console.log(inputUsername)
 
-  database.ref().push({
-    userEmailDB: userEmail,
-    inputNameDB: inputName,
-    inputUsernameDB: inputUsername
-  });
-  
-  $(location).attr('href', "myGames.html");
+
+
+    
+    console.log(userEmail)
+    console.log(userPassword)
+    console.log(inputName)
+    console.log(inputUsername)
+      
+    //   database.ref().push({
+    //     userEmailDB: userEmail,
+    //     userPasswordDB: userPassword,
+    //     inputNameDB: inputName,
+    //     inputUsernameDB: inputUsername
+    //   });
+    
+    $(location).attr("href", "/../../index.html");
+    
+
+
+
 
 });
 

@@ -17,6 +17,7 @@
   <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script> -->
   <link rel="stylesheet" type="text/css" href="assets/Style/style.css">
 
   <style>
@@ -75,20 +76,27 @@
     <form>
       <div class="form-group">
         <label for="exampleInputEmail1">email</label>
-        <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" autofocus>
+        <input type="email" class="form-control" id="inputEmail1" id="userEmail" aria-describedby="emailHelp" autofocus>
         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+
+        <label for="inputPassword6">Password</label>
+        <input type="password" id="inputPassword6" id="userPassword" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+        <small id="passwordHelpInline" class="text-muted">
+          Must be 8-20 characters long.
+        </small>
+
         <div class="form-row align-items-center">
           <div class="col-sm-3 my-1">
             <label class="sr-only" for="inlineFormInputName">Name</label>
-            <input type="text" class="form-control" id="inlineFormInputName" placeholder="Jane Doe">
+            <input type="text" class="form-control" id="inlineFormInputName" id="name" placeholder="Jane Doe">
           </div>
           <div class="col-sm-3 my-1">
             <div class="input-group">
-              <div class="input-group-prepend">
-                <div class="input-group-text">@</div>
-              </div>
+            <div class="input-group-prepend">
+            <div class="input-group-text">@</div>
+          </div>
               <label class="sr-only" for="inlineFormInputGroupUsername">Username</label>
-              <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+              <input type="text" class="form-control" id="inlineFormInputGroupUsername" id="userName" placeholder="Username">
             </div>
           </div>
           <div class="col-auto my-1">
@@ -107,9 +115,29 @@
       </div>
     </form>
 
+    <!-- Modal -->
+<div class="modal fade" id="passwordModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Oops!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Your password must be between 8 and 20 characters in length.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="modalClose" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
     ​
     <script src="assets/Javascript/firebase.js"></script>
-    <script src="assets/Javascript/gettingStarted.js"></script>
+    <script src="assets/Javascript/gettingStartedFirebaseTest2.js"></script>
 </body>
 ​<footer>
   <h6>gamer.Ready, 2020</h6>
