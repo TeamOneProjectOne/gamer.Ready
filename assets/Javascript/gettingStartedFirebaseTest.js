@@ -16,7 +16,7 @@ errorCode = "";
 errorMessage = "";
 
 
-//email/password login
+// //email/password registration
 // firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
 //     // Handle Errors here.
 //     var errorCode = error.code;
@@ -39,8 +39,8 @@ errorMessage = "";
 
 var database = firebase.database();
 
-var userEmail = "";
-var userPassword = "";
+var email = "";
+var password = "";
 var inputName = "";
 var inputUsername = "";
 
@@ -48,28 +48,42 @@ $("#getStartedButton").on("click", function (event) {
   
   console.log("clicked submit")
   
-  userEmail = $("#inputEmail1").val().trim();
-  userPassword = $("#inputPassword6").val().trim();
+  email = $("#inputEmail1").val().trim();
+  password = $("#inputPassword6").val().trim();
   inputName = $("#inlineFormInputName").val().trim();
   inputUsername = $("#inlineFormInputGroupUsername").val().trim();
 
 
-  if (userPassword.length >=8 && userPassword.length <= 20) {
+  if (password.length >=8 && password.length <= 20) {
     event.preventDefault();
     
-    console.log(userEmail)
-    console.log(userPassword)
+    console.log(email)
+    console.log(password)
     console.log(inputName)
     console.log(inputUsername)
+
+    //email/password registration
+    firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      // ...
+      
+      database.ref().push({
+        userEmailDB: email,
+        userPasswordDB: password,
+        inputNameDB: inputName,
+        inputUsernameDB: inputUsername
+      });
+
+
+
+    });
+    console.log("FB errMsg: ", errorMessage)
+
     
-    // database.ref().push({
-    //   userEmailDB: userEmail,
-    //   userPasswordDB: userPassword,
-    //   inputNameDB: inputName,
-    //   inputUsernameDB: inputUsername
-    // });
     
-    // $(location).attr('href', "myGames.html");
+    // $(location).attr('href', "myGamesFirebaseTest.html");
     
   } else {
 
