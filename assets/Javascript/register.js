@@ -19,9 +19,11 @@ var userEmail = "";
 var inputName = "";
 var inputUsername = "";
 
-$("#getStartedButton").on("click", function (event) {
+$(document).on("click", "#getStartedButton", function(event) {
   event.preventDefault();
   console.log("clicked submit")
+
+  localStorage.setItem("userEmail", userEmail)
 
   userEmail = $("#inputEmail1").val().trim();
   inputName = $("#inlineFormInputName").val().trim();
@@ -36,7 +38,7 @@ $("#getStartedButton").on("click", function (event) {
     inputUsernameDB: inputUsername
   });
   
-  $(location).attr('href', "userHome.html");
+  $(location).attr('href', "myGames.html");
 
 });
 

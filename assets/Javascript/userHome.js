@@ -18,8 +18,13 @@ var userEmail = "";
 var inputName = "";
 var inputUsername = "";
 
+$(document).ready(function() {
+  localStorage.getItem("userEmail")
+  console.log(userEmail)
+})
+
 database.ref().on("value", function(snapshot) {
     var sv = snapshot.val
-    console.log(sv.userEmail)
+    console.log(sv.userEmailDB)
 
 })
