@@ -29,14 +29,14 @@ $(document).ready(function () {
                 rawgTitle.append(response.results[i].name);
                 rawgRatings.text("Rating: " + response.results[i].rating);
                 rawgImages.attr("src", response.results[i].short_screenshots[0].image);
-                $("#test").append(rawgResults);
+                $(".games").append(rawgResults);
 
 
             }
 
         })
     }
-    var youtubeURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=21&q=bestvideogames&key=AIzaSyCPy54AlgJ3V_7vhdgJwHdRVkPHm06fHU0";
+    var youtubeURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=21&q=bestvideogames&key=AIzaSyDufHGIh9u3YxoZMiTTzoFn7AMSCjlXsDI";
     
     let videoGames = function youTube() {
         
@@ -54,11 +54,11 @@ $(document).ready(function () {
                 // console.log("items: ", items[i].snippet.title);
                 let videoImage = $("<img>").attr("src", items[i].snippet.thumbnails.medium.url)
                 videoDiv.append(videoImage, $("<br>"))
-                let videoName = $('<a href="' + EweTewbLink + '">' + items[i].snippet.title + '</a>')
+                let videoName = $('<a href="' + EweTewbLink + '" target="_blank">' + items[i].snippet.title + '</a>')
                 videoDiv.append(videoName)
                 // console.log("THIS THING HERE IS:", videoName);
                 // console.log("PICTURE THIS:", videoImage)
-                $("#videotest").append(videoDiv)
+                $(".videos").append(videoDiv)
                
     
     
@@ -70,30 +70,36 @@ $(document).ready(function () {
     rawg();
     videoGames();
     
+    
 
     $("#searchButton").on("click", function () {
         event.preventDefault();
+        $(".games").show();
         var searchInputGame = $("#searchInput").val().trim();
-        $("#test").empty();
-        $("#videotest").empty();
+        
+        $(".games").empty();
+        $(".videos").hide();
         queryURL = "https://api.rawg.io/api/games?search=" + searchInputGame;
         console.log("because clicked: " + queryURL)
         rawg()
-        $("#searchAll").append(rawgResults);
+        $("#test").append(rawgResults);
 
         
     });
 
     $("#videosButton").on("click", function(event){
         event.preventDefault();
+        $(".videos").show();
         var searchInputGame = $("#searchInput").val().trim();
-        $("#test").empty();
-        $("#videotest").empty();
-        youtubeURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=21&q=" + searchInputGame + "&key=AIzaSyCPy54AlgJ3V_7vhdgJwHdRVkPHm06fHU0";
+        
+        $(".videos").empty();
+        $(".games").hide();
+        youtubeURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=21&q=" + searchInputGame + "&key=AIzaSyDufHGIh9u3YxoZMiTTzoFn7AMSCjlXsDI";
         videoGames();
-        $("#searchAll").append(videoDiv);
+        $("#test").append(videoDiv);
         
     })
+    
 
 
 
@@ -120,6 +126,8 @@ $(document).ready(function () {
         console.log("ewe vids: ", $(this).find("a").attr("href"))
         console.log("ewe var: ",  eweTewbDivLink)
         $(location).attr('href', eweTewbDivLink)
+
+        localStorage.setItem("youtubeLink", eweTewbDivLink);
 
     })
    
