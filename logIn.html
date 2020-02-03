@@ -1,12 +1,11 @@
-<html>
-​
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="description" content="Welcome to gamer.Ready | Get Started Page" />
-  <meta name="keywords" content="Health, Training, Workout, Gym" />
-  <meta http-equiv="content-language" content="en-US" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <title>Welcome to gamer.Ready</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -19,106 +18,94 @@
     <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script> -->
   <link rel="stylesheet" type="text/css" href="assets/Style/style.css">
 
-  <style>
-    img {
-      height: 200px;
-      width: 400px;
-      margin: 10px 50px;
-      
-        }
-
-  </style>
 </head>
-​
 
 <body>
-  <div class="jumbotron">
-  <header>
-    <h1>Welcome to gamer.Ready</h1>
-    <div class="login-menu">
-      <h3> <button><a HREF="register.html">Register</a></button></h3>
-    </div>
-    <div class="login-menu">
-      <h3><button><a HREF="logIn.html">Log In</a></button></h3>
-    </div>
-    ​
+  <div class="container">
+    <div class="jumbotron">
+      <header>
+        <h1>Welcome to gamer.Ready</h1>
+        <div class="login-menu">
+          <h3> <button><a HREF="register.html">Register</a></button></h3>
+        </div>
+        <div class="login-menu">
+          <h3><button><a HREF="logIn.html">Log In</a></button></h3>
+        </div>
 
-  </header>
-</div>
-  ​<div class="container-fluid">
+      </header>
+    </div>
+  </div>
+  ​<div class="container">
     <main-nav>
-      <button><a HREF="index.html">Home</a></button>
+      <div class="spacing">
+        <button><a HREF="index.html">Home</a></button></div>
       <div class="spacing">
         <button><a href="gettingStarted.html">Get Started</a></button>
-        </div>
+      </div>
       <div class="spacing">
         <button><a HREF="myGames.html">Games</a></button></div>
       <div class="spacing">
         <button><a HREF="aboutUs.html">About Us</a></button></div>
       <div class="spacing">
         <button><a HREF="contact.html">Contact</a></button></div>
-        <div class="spacing">
-          <button id="videos"><a HREF="videos.html">Videos</a></button></div>
+      <div class="spacing">
+        <button id="videos"><a HREF="videos.html">Videos</a></button></div>
+      <div class="spacing"></div>
     </main-nav>
     ​
   </div>
-  <!-- <second-nav>
-    <ul>
-      Getting Started
-      <li><a href=#>Release Dates</a></li>
-      <li><a href=#>Games</a></li>
-
-    </ul>
-  </second-nav> -->
-
   <div class="container">
     <nav class="navbar navbar-dark bg-dark">
-      <div class="welcome"><p>Login</p></div>
-      <!-- <form class="form-inline">
-        <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search"
-          aria-label="Search Games">
-        <button id="searchButton" class="btn btn-outline-success my-2 my-sm-0" type="submit">Games</button>
-        <button id="videosButton" class="btn btn-outline-danger my-2 my-sm-0" type="submit">Videos</button>
-      </form> -->
+      <div class="welcome">
+        <p>Login</p>
+      </div>
     </nav>
+  </div>
 
+  <div class="container" class="bodyCard" id="logInCard">
     <form>
-      <div class="container" class="bodyCard" id="logInCard">
-        <div class="form-group1">
-          <p>Log in:</p>
-          <hr color="orangered">
+      <div class="form-group1">
+        <p>Log in:</p>
+        <hr color="orangered">
 
-          <div class="col-sm-3 my-1">
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <div class="input-group-text">@</div>
-              </div>
-              <label class="sr-only" for="inlineFormInputGroupUsername">Username</label>
-              <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+        <div class="col-auto my-1">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">@</div>
             </div>
-          </div>
-          <div class="col-auto my-1">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
-              <label class="form-check-label" for="autoSizingCheck2">
-                Remember me
-              </label>
-            </div>
-          </div>
-          <div class="col-auto my-1">
-            <button type="submit" class="btn btn-primary" id="logInButton">Submit</button>
+            <label class="sr-only" for="inlineFormInputGroupUsername">Username</label>
+            <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
           </div>
         </div>
+        <div class="col-auto my-1">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+            <label class="form-check-label" for="autoSizingCheck2">
+              Remember me
+            </label>
+          </div>
+        </div>
+        <div class="col-auto my-1">
+          <button type="submit" class="btn btn-primary" id="logInButton">Submit</button>
+        </div>
       </div>
-    </form>
 
+    </form>
   </div>
+  
 
   ​
   <script src="assets/Javascript/firebase.js"></script>
   <script src="assets/Javascript/gettingStarted.js"></script>
 </body>
-​<footer>
-  <h6>gamer.Ready, 2020</h6>
+<br>
+  <footer id="sticky-footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-12">
+                  gamer.Ready Copyright &copy; 2020
+              </div>
+          </div>
+      </div>
   </footer>
 </html>

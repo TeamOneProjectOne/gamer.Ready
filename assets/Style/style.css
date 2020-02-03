@@ -1,465 +1,410 @@
-
-header {
-     padding-left: 15px;
-    width: 100%;
-    /* border-bottom: 1px solid black; */
-    /* border: 3px solid rgb(4, 0, 255); */
-    line-height: 1;
-    /* background-color: rgb(48, 46, 46); */
-    /* box-shadow: 2px 2px 20px rgb(16, 4, 179); */
-    
-      }
- 
-  .jumbotron {
-    vertical-align: text-bottom;
-    padding-top: 50px;
-    padding-right: 15px;
-    padding-bottom: 5px;
-    font-size: 80px;
-    text-align: center;
-    /* display: inline-block; */
-    max-width: 100%;
-    /* width: 77%; */
-    /* background-color: lightskyblue; */
-    background-color: rgb(48, 46, 46);
-    font-family: 'VT323', monospace;
-    color:yellow;
-    outline-color: black;
-    text-shadow:
-		-3px -3px 0 #000,
-		3px -3px 0 #000,
-		-3px 3px 0 #000,
-        3px 3px 0 #000;
-        
-        align-content: center;
-        box-shadow: 2px 2px 30px rgb(255, 0, 255);
-    animation: pulse 6s infinite;
-    margin: auto 0;
-    }  
-    h1 {
-      vertical-align: text-bottom;
-      /* padding-top: 50px; */
-      padding-right: 15px;
-      padding-bottom: 5px;
-      font-size: 80px;
-      text-align: center;
-      background-color: rgba(48, 46, 46, 0);
-      font-family: 'VT323', monospace;
-      color:yellow;
-      /* outline-color: black; */
-      /* text-shadow:
-      -3px -3px 0 #000,
-      3px -3px 0 #000,
-      -3px 3px 0 #000,
-          3px 3px 0 #000; */
-          
-          align-content: center;
-          animation: 6s infinite;
-          animation-name: change;
-      }  
-      @keyframes change {
-        
-        0% {
-            /* color: rgb(0, 0, 0); */
-            text-shadow:
-      -3px -3px 0 hotpink,
-      3px -3px 0 hotpink,
-      -3px 3px 0 hotpink,
-          3px 3px 0 hotpink;
-        }
-        15% {
-            /* color: rgb(151, 250, 156); */
-            text-shadow:
-            -3px -3px 0 red,
-            3px -3px 0 red,
-            -3px 3px 0 red,
-                3px 3px 0 red;        }
-        25% {
-            /* color: rgb(151, 161, 250); */
-            text-shadow:
-            -3px -3px 0 purple,
-            3px -3px 0 purple,
-            -3px 3px 0 purple,
-                3px 3px 0 purple;        }
-        50% {
-            /* color: rgb(253, 142, 142); */
-            text-shadow:
-            -3px -3px 0 blue,
-            3px -3px 0 blue,
-            -3px 3px 0 blue,
-                3px 3px 0 blue;        }
-        75% {
-            /* color: rgb(172, 144, 248); */
-            text-shadow:
-            -3px -3px 0 rgb(0, 255, 0),
-            3px -3px 0 rgb(0, 255, 0),
-            -3px 3px 0 rgb(17, 197, 17),
-                3px 3px 0 rgb(0, 255, 0);        }
-        100% {
-            /* color: black; */
-            text-shadow:
-            -3px -3px 0 hotpink,
-            3px -3px 0 hotpink,
-            -3px 3px 0 hotpink,
-                3px 3px 0 hotpink;        }
-    }
-   
-  
-  @keyframes pulse {
-    0% {
-        border-color: pink;
-        box-shadow: 2px 2px 40px rgb(255, 0, 234);
-        /* text-shadow: 2px 2px 30px rgb(0, 255, 0); */
-    }
-    15% {
-        border-color: rgb(151, 250, 156);
-        box-shadow: 2px 2px 40px rgb(0, 255, 13);
-        /* text-shadow: 2px 2px 30px rgb(255, 72, 0); */
-    }
-    25% {
-        border-color: rgb(151, 161, 250);
-        box-shadow: 2px 2px 60px blue;
-        /* text-shadow: 2px 2px 30px rgb(255, 0, 119); */
-    }
-    50% {
-        border-color: rgb(253, 142, 142);
-        box-shadow: 2px 2px 40px rgb(255, 0, 0);
-        /* text-shadow: 2px 2px 30px rgb(132, 0, 255); */
-    }
-    75% {
-        border-color: rgb(172, 144, 248);
-        box-shadow: 2px 2px 60px rgb(76, 0, 255);
-        /* text-shadow: 2px 2px 30px rgb(4, 0, 255); */
-    }
-    100% {
-        border-color: pink;
-        box-shadow: 2px 2px 40px rgb(255, 0, 242);
-        /* text-shadow: 2px 2px 30px rgb(9, 255, 0); */
-    }
+.jumbotron {
+  background-image: url(../images/micro_carbon.png);
+  background-repeat: repeat;
+  vertical-align: text-bottom;
+  padding: 30px;
+  text-align: center;
+  max-width: 100%;
+  width: 100%;
+  background-color: rgb(48, 46, 46);
+  font-family: 'VT323', monospace;
+  color: yellow;
+  outline-color: black;
+  text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+  align-content: center;
+  box-shadow: 2px 2px 30px rgb(255, 0, 255);
+  animation: pulse 6s infinite;
+  margin: auto 0;
 }
-  
-    
+
+h1 {
+  font-size: 80px;
+  text-align: center;
+  background-color: rgba(48, 46, 46, 0);
+  font-family: 'VT323', monospace;
+  color: yellow;
+  animation: 6s infinite;
+  animation-name: change;
+}
+
+@keyframes change {
+  0% {
+    text-shadow: -3px -3px 0 hotpink, 3px -3px 0 hotpink, -3px 3px 0 hotpink, 3px 3px 0 hotpink;
+  }
+  15% {
+    text-shadow: -3px -3px 0 red, 3px -3px 0 red, -3px 3px 0 red, 3px 3px 0 red;
+  }
+  25% {
+    text-shadow: -3px -3px 0 purple, 3px -3px 0 purple, -3px 3px 0 purple, 3px 3px 0 purple;
+  }
+  50% {
+    text-shadow: -3px -3px 0 blue, 3px -3px 0 blue, -3px 3px 0 blue, 3px 3px 0 blue;
+  }
+  75% {
+    text-shadow: -3px -3px 0 rgb(0, 255, 0), 3px -3px 0 rgb(0, 255, 0), -3px 3px 0 rgb(17, 197, 17), 3px 3px 0 rgb(0, 255, 0);
+  }
+  100% {
+    text-shadow: -3px -3px 0 hotpink, 3px -3px 0 hotpink, -3px 3px 0 hotpink, 3px 3px 0 hotpink;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    border-color: pink;
+    box-shadow: 2px 2px 40px rgb(255, 0, 234);
+  }
+  15% {
+    border-color: rgb(151, 250, 156);
+    box-shadow: 2px 2px 40px rgb(0, 255, 13);
+  }
+  25% {
+    border-color: rgb(151, 161, 250);
+    box-shadow: 2px 2px 60px blue;
+  }
+  50% {
+    border-color: rgb(253, 142, 142);
+    box-shadow: 2px 2px 40px rgb(255, 0, 0);
+  }
+  75% {
+    border-color: rgb(172, 144, 248);
+    box-shadow: 2px 2px 60px rgb(76, 0, 255);
+  }
+  100% {
+    border-color: pink;
+    box-shadow: 2px 2px 40px rgb(255, 0, 242);
+  }
+}
 
 .login-menu {
-    float: right;
-    padding-top: 30px;
-    margin-right: 15px;
-  }
+  position: relative;
+  display: inline-block;
+}
 
-  /* h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:yellow; */
-  /* } */
-  head, body, nav {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: rgb(48, 46, 46);
-    color:orangered;
-    font-family: 'Baumans', cursive;
-    position: absolute;
-    margin: 20px;
-  }
+body, nav {
+  background-color: rgb(48, 46, 46);
+  color: orangered;
+  font-family: 'Baumans', cursive;
+}
 
-h6{
+h6 {
   margin: 0px;
   text-align: center;
-
 }
-  
 
-  main-nav {
-    position: relative;
-    /* height: 75px; */
-    float: left;
-    font-size: 20px;
-    padding: 10px;
-    width: auto;
-    line-height: 1.5;
-    /* padding-left: 5%; */
-    background-color: rgba(255, 60, 0, 0.76);
-    background-image: url(../images/NES.PNG);
-    background-size: contain;
-    color: orangered;
-    /* border-bottom: 1px solid black; */
-    box-shadow: rgba(3, 3, 3, 0.952) 0px 9px;
-    border-style: groove;
-    border-color: rgb(5, 192, 5);
-    border-radius: 5px;
-    border-width: 5px;
-    margin: 20px;
-    /* box-shadow: 2px 2px 20px rgb(0, 255, 64); */
-    box-shadow: 2px 2px 30px rgb(255, 0, 255);
-    animation: pulse 8s infinite;
-    
-    
-  }
-  
-  .spacing {
-    display: inline-block;
-    padding-left: 150px;
-  }
-  
-  /* second-nav {
-    margin-top: 1px;
-    font-size: 20px;
-    text-align: left;
-    float: left;
-    border-left: 1px solid black;
-      border-right: 1px solid black;
-      width: 12%;
-    padding-bottom: 550px;
-    background-color: lightsteelblue;
-  } */
-  a {
-      color:orangered;
-      text-decoration: none;
-  }
-  li a {
-      display: block;
-      color:orangered;
-      text-decoration: none;
-  }
-  
-  /* li a:hover, a:hover {
-      background-color: gray;
-      color: white;
-  } */
-  
-  ul {
-    list-style-type: none;
-    line-height: 2;
-  }
-  
-​
-  h4{
-    text-align: left;
-    font-size: 20px;
-    line-height: 1.3;
-  }
-  p {
-    text-align: left;
-  }
-  
-  article {
-    float: left;
-    padding: 10px;
-    width: 86%;
-    text-align: center;
-   }
-  
-​
-  
-  imgdiv {
-    float: left;
-    padding-top: 10px;
-    padding-left: 13%;
-    
-  }
-
-  .thisDiv, #youtubeGame {
-    border-style: ridge;
-    border-radius: 15px;
-    border-color: rgb(164, 236, 56);
-    /* border-color: rgb(99, 6, 136); */ 
-    border-width: 10px;
-    background-color: black;
-    padding: 8px;
-    margin: 3px;
-    box-shadow: rgba(3, 3, 3, 0.952) 9px 9px;
-    margin-bottom: 12px;
-    
-   }
-
-  .thisDiv:hover {
-    background-color: greenyellow;
-  }
-
-
-  html, h1 {
-    font-family: 'VT323', monospace;
-  
-  }
-  
-  body {
-    font-family: 'Baumans', cursive;
-  }
-  button {
-    color: orangered;
-    border-style: solid;
-    border-radius: 50px;
-    box-shadow: black 4px 4px;
-    padding: 10px;
-    margin: 6px;
-  }
-  button:hover {
-    border-color: rgb(15, 15, 15);
-    box-shadow: whitesmoke 0px 0px 2px 2px;
-    background-color: rgb(15, 15, 15);
-  }
-
- #gettingStartedCard, #logInCard {
-    border-style: ridge;
-    border-radius: 15px;
-    border-color: rgb(164, 236, 56);
-    /* border-color: rgb(99, 6, 136); */ 
-    border-width: 10px;
-    background-color: black;
-    padding: 10px;
-    box-shadow: rgba(3, 3, 3, 0.952) 9px 9px;
-    margin-bottom: 12px;
-    justify-content: center;
-  }
-
-  #gameTitleDisplay {
-    font-size: 4rem;
-    font-family: 'Montserrat Subrayada', sans-serif;
-    text-shadow: 2px 2px 10px rgb(157, 21, 236);
-    /* text-shadow: 2px 2px rgb(164, 236, 56); */
-  }
-  #imageColumn, #statColumn, #descColumn, #gameTitleDisplay {
-    border-style: ridge;
-    border-radius: 15px;
-    border-color: rgb(164, 236, 56);
-    /* border-color: rgb(99, 6, 136); */ 
-    border-width: 10px;
-    background-color: black;
-    padding: 8px;
-    margin: 3px;
-    box-shadow: rgba(3, 3, 3, 0.952) 9px 9px;
-    margin-bottom: 12px;
-  }
-  #statColumn {
-    margin-right: 150px;
-  }
-  #videoVideo, .form-group {
-    border-style: ridge;
-    border-radius: 15px;
-    border-width: 10px;
-    background-color: rgb(94, 90, 90);
-    border-color: red;
-    box-shadow: rgba(3, 3, 3, 0.952) 9px 9px;
-    margin-bottom: 12px;
-    padding: 10px;
-  }
-
-  #videoVideo:hover {
-    background-color: rgb(201, 53, 53);
-    
-  }
-  .navbar {
-    border-style: groove;
-    border-radius: 10px;
-    border-width: 8px;
-    box-shadow: rgba(3, 3, 3, 0.952) 9px 9px;
-    margin-bottom: 12px;
-    padding: 20px;
-  }
-  .main-section {
-    text-align: center;
-    padding: 10px 45px;
-  }
-  .welcome {
-    margin: 0 auto;
-    text-align: center;
-    font-size: 3rem;
-    text-shadow: 2px 2px 10px rgb(236, 21, 21);
-  }
-  img {
-    height: auto;
-    width: 100%;
-    /* margin: 10px 50px; */
-    
-      }
-  
-  @media only screen and (max-width: 968px) {
-
-  };
-  
- 
-  @media only screen and (max-width: 720px){
-  button {
-    font-family: 'VT323', monospace;
-    min-width: 100px;
-      }
-    
-    
-  .nav
-    {float: left;}
-
-
-.form-group {
+main-nav {
+  position: relative;
   float: left;
-}
-
-.thisDiv {        
-      float: left; 
-      font-size: auto;
-      min-width: 500px;
-      float: left;
-      margin: 0px 0px 0px 0px;
-    }
-
-
-imgdiv{
-  /* max-width: 350px; */
-  margin: 0px 0px 0px 0px;
-}
-
-img {
-  max-width: 350px;
+  font-size: 20px;
+  padding: 10px;
   width: auto;
-  margin: 0px 0px 0px 0px;    }
-
-};
-
-@media only screen and (max-width: 450px){
-  header {
-    max-width: 1;
-  }
-
-  body {
-    margin: 0px; 
-  }
-
-  .jumbotron {
-    width: 100vw;
-  }
+  line-height: 1.5;
+  background-color: rgba(255, 60, 0, 0.76);
+  background-image: url(../images/NES.PNG);
+  background-size: contain;
+  color: orangered;
+  box-shadow: rgba(3, 3, 3, 0.952) 0px 9px;
+  border-style: groove;
+  border-color: rgb(5, 192, 5);
+  border-radius: 5px;
+  border-width: 5px;
+  margin: 20px auto;
+  box-shadow: 2px 2px 30px rgb(255, 0, 255);
+  animation: pulse 8s infinite;
 }
-  
-  
-  @media only screen and (max-width: 300px){
- .jumbotron
- {float: left;
-max-width: 100px;};
+
+.spacing {
+  display: inline;
+  padding: 35px;
+  margin: 0 auto;
+}
+
+a {
+  color: orangered;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  line-height: 2;
+}
+
+​ h4 {
+  text-align: left;
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+p {
+  text-align: left;
+}
+
+​ imgdiv {
+  float: left;
+  padding-top: 10px;
+  padding-left: 13%;
+}
+
+.thisDiv {
+  border-style: ridge;
+  border-radius: 15px;
+  border-width: 10px;
+  background-color: black;
+  border-color: rgb(164, 236, 56);
+  box-shadow: rgba(3, 3, 3, 0.952) 9px 9px;
+  margin-bottom: 12px;
+  padding: 10px;
+}
+
+.thisDiv:hover {
+  background-color: greenyellow;
+}
+
+html, h1 {
+  font-family: 'VT323', monospace;
+}
+
+body {
+  font-family: 'Baumans', cursive;
+  background-image: url(../images/micro_carbon_@2X.png);
+  background-repeat: repeat;
+}
+
+.navbar {
+  background-image: url(../images/micro_carbon.png);
+  background-repeat: repeat;
+}
 
 button {
-    float: left;
-    font-family: 'VT323', monospace;
-    max-width: 50px;
-    }
+  font-family: 'Baumans', cursive;
+  color: orangered;
+  border-style: solid;
+  border-radius: 50px;
+  box-shadow: black 4px 4px;
+  padding: 10px;
+  margin: 6px;
+}
 
-  .thisDiv {
-    font-family: 'VT323', monospace;
-    font-size: auto;
-    max-width: 150px;
-    float: left;
-    margin: 0px 0px 0px 0px;
+button:hover {
+  border-color: rgb(15, 15, 15);
+  box-shadow: whitesmoke 0px 0px 2px 2px;
+  background-color: rgb(15, 15, 15);
+}
+
+#gettingStartedCard, #logInCard {
+  border-style: ridge;
+  border-radius: 15px;
+  border-color: rgb(164, 236, 56);
+  border-width: 10px;
+  background-color: black;
+  padding: 10px;
+  box-shadow: rgba(3, 3, 3, 0.952) 9px 9px;
+  margin-bottom: 12px;
+  justify-content: center;
+}
+
+#gameTitleDisplay {
+  font-size: 4rem;
+  font-family: 'Montserrat Subrayada', sans-serif;
+  text-shadow: 2px 2px 10px rgb(157, 21, 236);
+  animation: 15s infinite;
+  animation-name: title;
+}
+
+@keyframes title {
+  0% {
+    text-shadow: -3px -3px 0 hotpink, 3px -3px 0 hotpink, -3px 3px 0 hotpink, 3px 3px 0 hotpink;
   }
-imgdiv {
-  max-width: 100px;
-  margin: 0px 0px 0px 0px;
+  15% {
+    text-shadow: -5px -5px 1px red, 5px -5px 1px red, -5px 5px 1px red, 5px 5px 1px red;
+  }
+  25% {
+    text-shadow: -5px -5px 2px purple, 5px -3px 2px purple, -5px 5px 2px purple, 5px 5px 2px purple;
+  }
+  50% {
+    text-shadow: -3px -3px 3px blue, 3px -3px 3px blue, -3px 3px 3px blue, 3px 3px 3px blue;
+  }
+  75% {
+    text-shadow: -5px -5px 1.5px rgb(0, 255, 0), 5px -5px 1.5px rgb(0, 255, 0), -5px 5px 1.5px rgb(17, 197, 17), 5px 5px 1.5px rgb(0, 255, 0);
+  }
+  100% {
+    text-shadow: -3px -3px 0 hotpink, 3px -3px 0 hotpink, -3px 3px 0 hotpink, 3px 3px 0 hotpink;
+  }
+}
+
+#bGround {
+  height: auto;
+  width: 100%;
+  border-style: dashed;
+  border-width: 1px;
+  animation: 2.5s infinite;
+  animation-name: shimmer;
+}
+
+@keyframes shimmer {
+  0% {
+    border-color: pink;
+    box-shadow: 2px 2px 40px rgb(255, 0, 234);
+  }
+  15% {
+    border-color: rgb(151, 250, 156);
+    box-shadow: 2px 2px 40px rgb(0, 255, 13);
+  }
+  25% {
+    border-color: rgb(151, 161, 250);
+    box-shadow: 2px 2px 60px blue;
+  }
+  50% {
+    border-color: rgb(253, 142, 142);
+    box-shadow: 2px 2px 40px rgb(255, 0, 0);
+  }
+  75% {
+    border-color: rgb(172, 144, 248);
+    box-shadow: 2px 2px 60px rgb(76, 0, 255);
+  }
+  100% {
+    border-color: pink;
+    box-shadow: 2px 2px 40px rgb(255, 0, 242);
+  
+  }
+}
+
+#imageColumn, #statColumn, #descColumn, #gameTitleDisplay {
+  border-style: ridge;
+  border-radius: 15px;
+  border-color: rgb(164, 236, 56);
+  border-width: 10px;
+  background-color: black;
+  padding: 8px;
+  margin: 3px;
+  box-shadow: rgba(3, 3, 3, 0.952) 9px 9px;
+  margin-bottom: 12px;
+}
+
+#statColumn {
+  margin-right: 150px;
+}
+
+#videoVideo, .form-group {
+  border-style: ridge;
+  border-radius: 15px;
+  border-width: 10px;
+  background-color: rgb(94, 90, 90);
+  border-color: red;
+  box-shadow: rgba(3, 3, 3, 0.952) 9px 9px;
+  margin-bottom: 12px;
+  padding: 10px;
+}
+
+#videoVideo:hover {
+  background-color: rgb(201, 53, 53);
+}
+
+.navbar {
+  border-style: groove;
+  border-radius: 10px;
+  border-width: 8px;
+  box-shadow: rgba(3, 3, 3, 0.952) 9px 9px;
+  margin-bottom: 12px;
+  padding: 20px;
+}
+
+.main-section {
+  text-align: center;
+  padding: 10px 45px;
+}
+
+.welcome {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 3rem;
+  text-shadow: 2px 2px 10px rgb(236, 21, 21);
 }
 
 img {
-  max-width: 100px;
-  margin: 0px 0px 0px 0px;
+  height: auto;
+  width: 100%;
 }
 
-.main-section{
-  max-width: 150px;
+footer {
+  background-image: url(../images/carbon_fibre.png);
+  text-align: center;
+  line-height: 50px;
+  padding: 0 20px;
+  margin: auto;
 }
 
+input[type=text], input[type=email], textarea {
+  height: auto;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
 
+textarea {
+  height: 150px;
+  width: 100%;
+}
 
+#send {
+  color: antiquewhite;
+  background-color: orangered;
+  border-style: solid;
+  border-radius: 50px;
+  box-shadow: grey 4px 4px;
+}
 
-  };
-  
+#send:hover {
+  color: black;
+  box-shadow: whitesmoke 0px 0px 2px 2px;
+  background-color: limegreen;
+}
+
+@media only screen and (max-width: 968px) {}
+
+@media only screen and (max-width: 720px) {
+  .container {
+    max-width: 100%;
+  }
+  button {
+    min-width: 100px;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #gameTitleDisplay {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  #gameTitleDisplay {
+    font-size: 2rem;
+  }
+  .navbar {
+    padding: 3px;
+  }
+  .welcome {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 10px;
+  }
+  .spacing {
+    padding: 0px;
+  }
+  button {
+    float: left;
+    position: relative;
+    font-size: 15px;
+    float: left;
+    max-width: 100%;
+  }
+  .main-section {
+    max-width: 100%;
+  }
+}
