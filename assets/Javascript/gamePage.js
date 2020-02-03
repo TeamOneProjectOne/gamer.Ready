@@ -34,7 +34,8 @@ $(document).ready(function () {
     }).then(function (response) {
         console.log("response: ", response);
         var rawgResults = $('<div class="thisGame">').attr("id", "thisGames");
-        var rawgImages = $("<img>").attr("data-imgThisGame", "bGround");
+        // var rawgImages = $("<img>").attr("data-imgThisGame", "bGround");
+        var rawgImages = $("<img>").attr("id", "bGround");
         rawgImages.attr("src", response.results[0].background_image)
         $("#imageColumn").append(rawgImages);
         var rawgRatings = $('<div id="thisGameRating"></div><br>');

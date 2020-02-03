@@ -1,12 +1,10 @@
-<html>
-​
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="description" content="Welcome to gamer.Ready | Get Started Page" />
-  <meta name="keywords" content="Health, Training, Workout, Gym" />
-  <meta http-equiv="content-language" content="en-US" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>gamer.Ready</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -15,91 +13,84 @@
   <!-- <script src="assets/Javascript/firebase.js"></script> -->
   <link href="https://fonts.googleapis.com/css?family=Baumans|VT323&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Aclonica|Architects+Daughter|Marmelad|Montserrat+Subrayada|Press+Start+2P|Tomorrow&display=swap" rel="stylesheet">
-
-  <style>
-    img {
-      height: 400px;
-      width: 800px;
-      margin: 10px 150px;
-      box-shadow: 2px 2px 10px rgb(255, 255, 255);
-    }
-  </style>
+  <link
+    href="https://fonts.googleapis.com/css?family=Aclonica|Architects+Daughter|Marmelad|Montserrat+Subrayada|Press+Start+2P|Tomorrow&display=swap"
+    rel="stylesheet">
 </head>
-​
-
 <body>
-  <div class="jumbotron">
-  <header>
-    <h1>gamer.Ready</h1>
-    <div class="login-menu">
-      <h3> <button><a HREF="register.html">Register</a></button></h3>
+  <div class="container">
+    <div class="jumbotron">
+      <header>
+        <h1>gamer.Ready</h1>
+        <div class="login-menu">
+          <h3> <button><a HREF="register.html">Register</a></button></h3>
+        </div>
+        <div class="login-menu">
+          <h3><button><a HREF="logIn.html">Log In</a></button></h3>
+        </div>
+
+      </header>
     </div>
-    <div class="login-menu">
-      <h3><button><a HREF="logIn.html">Log In</a></button></h3>
-    </div>
-    ​
-  </header>
-  ​</div>
-  ​<div class="container-fluid">
-  <main-nav>
-    <button><a HREF="index.html">Home</a></button>
-    <div class="spacing">
-      <button><a href="gettingStarted.html">Get Started</a></button>
+  </div>
+  ​<div class="container">
+    <main-nav>
+      <div class="spacing">
+        <button><a HREF="index.html">Home</a></button></div>
+      <div class="spacing">
+        <button><a href="gettingStarted.html">Get Started</a></button>
       </div>
-    <div class="spacing">
-      <button><a HREF="myGames.html">Games</a></button></div>
-    <div class="spacing">
-      <button><a HREF="aboutUs.html">About Us</a></button></div>
-    <div class="spacing">
-      <button><a HREF="contact.html">Contact</a></button></div>
+      <div class="spacing">
+        <button><a HREF="myGames.html">Games</a></button></div>
+      <div class="spacing">
+        <button><a HREF="aboutUs.html">About Us</a></button></div>
+      <div class="spacing">
+        <button><a HREF="contact.html">Contact</a></button></div>
       <div class="spacing">
         <button id="videos"><a HREF="videos.html">Videos</a></button></div>
-  </main-nav>
-  ​ ​</div>
-  <!-- <second-nav>
-          <ul>
-            Getting Started
-            <li><a href=#>Release Dates</a></li>
-            <li><a href=#>Games</a></li>
-            
-          </ul>
-        </second-nav> -->
+      <div class="spacing"></div>
+    </main-nav>
+    ​
+  </div>
 
   <div class="container">
     <nav class="navbar navbar-dark bg-dark">
-      <form class="form-inline">
-        <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search"
-          aria-label="Search Games">
-        <button id="searchButton" class="btn btn-outline-success my-2 my-sm-0" type="submit">Games</button>
-        <button id="videosButton" class="btn btn-outline-danger my-2 my-sm-0" type="submit">Videos</button>
-      </form>
+      <div class="welcome">
+        <p>Game Info</p>
+      </div>
     </nav>
+  </div>
+  <div class="container">
     <h2 id="gameTitleDisplay" style="text-align: center;"></h2>
     <div class="row">
-      <div class="col-md" id="imageColumn">
-        <div id="thisGame">
-
-        </div>
+      <div class="col" id="imageColumn">
       </div>
     </div>
+    <div class="container">
     <div class="row justify-space-inbetween">
 
 
-      <div class="col-md-5" id="statColumn">
+      <div class="col" id="statColumn">
 
       </div>
-      <div class="col-md-5" id="descColumn">
+      <div class="col" id="descColumn">
 
       </div>
     </div>
   </div>
-
+  </div>
+  </div>
+  
   ​
-  <!-- <script src="assets/Javascript/api.js"></script> -->
   <script src="assets/Javascript/gamePage.js"></script>
 </body>
-​​<footer>
-  <h6>gamer.Ready, 2020</h6>
+<br>
+  <footer id="sticky-footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-12">
+                  gamer.Ready Copyright &copy; 2020
+              </div>
+          </div>
+      </div>
   </footer>
 </html>
