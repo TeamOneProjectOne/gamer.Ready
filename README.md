@@ -37,11 +37,11 @@ You may also simply use the link to the deployed site above or in section 5.
 
 4. Link to a video of the app in use is coming soon!
 
-5. Link to the deployed version of the app:
-	https://github.com/Jeff-Ashear/-liri-node-app.git
- ...and a link to the repo:
-	https://github.com/Jeff-Ashear/-liri-node-app.git
+5.  Deployed app:
+    https://tinyurl.com/gamer-ready
 
+    Code repo:
+    https://tinyurl.com/gamer-ready-repo
 
 
 6. Technologies used in creating this app:
@@ -59,10 +59,11 @@ Keyframes animations.
 	
 
 
-7. This app and its original concept were developed collaboratively by Destiny Clarke, Justin Tucker, Braxton Thomas, and Jeff Ashear.
+7. Developers and their respective contributions:
+This app and its original concept were developed collaboratively by Destiny Clarke, Justin Tucker, Braxton Thomas, and Jeff Ashear.
 	Destiny Clarke developed the api calls for both YouTube and RAWG, did much of the styling, responsiveness and the animations.
 	Justin Tucker created the flow, navigation and wrote all copy appearing in the app, as well as assisting with jQuery and debugging.
-	Braxton Thomas built the nav bar and helped out with styling and layout.
+	Braxton Thomas built the nav bar and helped out with styling and layout, paracoding, and debugging.
 	Jeff Ashear helped with the RAWG api, wrote the ajax and jQuery, and did much of the styling and branding including UI and textures, and some help with the animations.
 
         
